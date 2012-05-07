@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+   xmlns:android="http://schemas.android.com/apk/res/android">
+
+   <item
+      android:state_pressed="true">
+
+      <shape>
+         <solid
+            android:color="@color/background_pressed" />
+
+         <padding
+            android:left="1dip"
+            android:top="1dip"
+            android:right="1dip"
+            android:bottom="1dip" />
+
+         <corners
+            android:bottomRightRadius="1dip"
+            android:bottomLeftRadius="1dip"
+            android:topLeftRadius="7dip"
+            android:topRightRadius="7dip" />
+      </shape>
+   </item>
+
+   <item>
+      <shape>
+         <solid
+            android:color="@color/white" />
+
+         <padding
+            android:left="1dip"
+            android:top="1dip"
+            android:right="1dip"
+            android:bottom="1dip" />
+
+         <corners
+            android:bottomRightRadius="1dip"
+            android:bottomLeftRadius="1dip"
+            android:topLeftRadius="7dip"
+            android:topRightRadius="7dip" />
+      </shape>
+   </item>
+
+
+
+</selector>

@@ -1,0 +1,1492 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		047A20731557B31F006D24CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A20721557B31F006D24CF /* UIKit.framework */; };
+		047A20751557B31F006D24CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A20741557B31F006D24CF /* Foundation.framework */; };
+		047A20771557B31F006D24CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A20761557B31F006D24CF /* CoreGraphics.framework */; };
+		047A21A81557B373006D24CF /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A208A1557B373006D24CF /* AboutViewController.m */; };
+		047A21A91557B373006D24CF /* AboutViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A208B1557B373006D24CF /* AboutViewController.xib */; };
+		047A21AA1557B373006D24CF /* AlphabetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A208D1557B373006D24CF /* AlphabetViewController.m */; };
+		047A21AB1557B373006D24CF /* AlphabetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A208E1557B373006D24CF /* AlphabetViewController.xib */; };
+		047A21AD1557B373006D24CF /* bidrs.sql in Resources */ = {isa = PBXBuildFile; fileRef = 047A20901557B373006D24CF /* bidrs.sql */; };
+		047A21AE1557B373006D24CF /* Bird.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A20921557B373006D24CF /* Bird.m */; };
+		047A21AF1557B373006D24CF /* BirdCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A20941557B373006D24CF /* BirdCell.m */; };
+		047A21B01557B373006D24CF /* BirdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A20951557B373006D24CF /* BirdCell.xib */; };
+		047A21B11557B373006D24CF /* birds-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047A20961557B373006D24CF /* birds-Info.plist */; };
+		047A21B21557B373006D24CF /* birdsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A20991557B373006D24CF /* birdsAppDelegate.m */; };
+		047A21B31557B373006D24CF /* DesciptionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A209B1557B373006D24CF /* DesciptionVC.m */; };
+		047A21B41557B373006D24CF /* DesciptionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A209C1557B373006D24CF /* DesciptionVC.xib */; };
+		047A21B51557B373006D24CF /* DetailTabController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A209E1557B373006D24CF /* DetailTabController.m */; };
+		047A21B61557B373006D24CF /* DetailTabController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A209F1557B373006D24CF /* DetailTabController.xib */; };
+		047A21B71557B373006D24CF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 047A20A21557B373006D24CF /* InfoPlist.strings */; };
+		047A21B81557B373006D24CF /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A20A41557B373006D24CF /* MainWindow.xib */; };
+		047A21B91557B373006D24CF /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A20A61557B373006D24CF /* RootViewController.xib */; };
+		047A21BA1557B373006D24CF /* FBDialog.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 047A20AB1557B373006D24CF /* FBDialog.bundle */; };
+		047A21BB1557B373006D24CF /* libfacebook_ios_sdk.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A20B11557B373006D24CF /* libfacebook_ios_sdk.a */; };
+		047A21BC1557B373006D24CF /* forward.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A20B81557B373006D24CF /* forward.png */; };
+		047A21BD1557B373006D24CF /* GameOptions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 047A20B91557B373006D24CF /* GameOptions.plist */; };
+		047A21BE1557B373006D24CF /* GameOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A20BB1557B373006D24CF /* GameOptionsViewController.m */; };
+		047A21BF1557B373006D24CF /* GameOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A20BC1557B373006D24CF /* GameOptionsViewController.xib */; };
+		047A21C01557B373006D24CF /* GameVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A20BE1557B373006D24CF /* GameVC.m */; };
+		047A21C11557B373006D24CF /* GameVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A20BF1557B373006D24CF /* GameVC.xib */; };
+		047A21C31557B373006D24CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A20C41557B373006D24CF /* main.m */; };
+		047A21C41557B373006D24CF /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A20C61557B373006D24CF /* MapViewController.m */; };
+		047A21C51557B373006D24CF /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A20C71557B373006D24CF /* MapViewController.xib */; };
+		047A21C61557B373006D24CF /* MusicVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A20C91557B373006D24CF /* MusicVC.m */; };
+		047A21C71557B373006D24CF /* MusicVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A20CA1557B373006D24CF /* MusicVC.xib */; };
+		047A21C81557B373006D24CF /* NSMutableArray+Shuffle.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A20CC1557B373006D24CF /* NSMutableArray+Shuffle.m */; };
+		047A21C91557B373006D24CF /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A20CD1557B373006D24CF /* pause.png */; };
+		047A21CA1557B373006D24CF /* play.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A20CE1557B373006D24CF /* play.png */; };
+		047A21CB1557B373006D24CF /* 1-greenheron-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D01557B373006D24CF /* 1-greenheron-image.jpg */; };
+		047A21CC1557B373006D24CF /* 1-greenheron-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D11557B373006D24CF /* 1-greenheron-image_tn.jpg */; };
+		047A21CD1557B373006D24CF /* 1-GreenHeron-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D21557B373006D24CF /* 1-GreenHeron-short.wav */; };
+		047A21CE1557B373006D24CF /* 1-greenheron.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D31557B373006D24CF /* 1-greenheron.txt */; };
+		047A21CF1557B373006D24CF /* 10-BarredOwl-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D41557B373006D24CF /* 10-BarredOwl-image.jpg */; };
+		047A21D01557B373006D24CF /* 10-BarredOwl-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D51557B373006D24CF /* 10-BarredOwl-image_tn.jpg */; };
+		047A21D11557B373006D24CF /* 10-BarredOwl-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D61557B373006D24CF /* 10-BarredOwl-long.wav */; };
+		047A21D21557B373006D24CF /* 10-BarredOwl-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D71557B373006D24CF /* 10-BarredOwl-short.wav */; };
+		047A21D31557B373006D24CF /* 10-BarredOwl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D81557B373006D24CF /* 10-BarredOwl.txt */; };
+		047A21D41557B373006D24CF /* 11-AmericanCrow-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20D91557B373006D24CF /* 11-AmericanCrow-long.wav */; };
+		047A21D51557B373006D24CF /* 11-AmericanCrow-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20DA1557B373006D24CF /* 11-AmericanCrow-short.wav */; };
+		047A21D61557B373006D24CF /* 11-americancrow.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20DB1557B373006D24CF /* 11-americancrow.jpg */; };
+		047A21D71557B373006D24CF /* 11-americancrow.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20DC1557B373006D24CF /* 11-americancrow.txt */; };
+		047A21D81557B373006D24CF /* 11-americancrow_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20DD1557B373006D24CF /* 11-americancrow_tn.jpg */; };
+		047A21D91557B373006D24CF /* 12-black-crowned night-heron-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20DE1557B373006D24CF /* 12-black-crowned night-heron-image.jpg */; };
+		047A21DA1557B373006D24CF /* 12-black-crowned night-heron-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20DF1557B373006D24CF /* 12-black-crowned night-heron-image_tn.jpg */; };
+		047A21DB1557B373006D24CF /* 12-black-crowned night-heron.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E01557B373006D24CF /* 12-black-crowned night-heron.txt */; };
+		047A21DC1557B373006D24CF /* 12-Black-crownedNight-Heron-long.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E11557B373006D24CF /* 12-Black-crownedNight-Heron-long.mp4 */; };
+		047A21DD1557B373006D24CF /* 13-Yellow-crowned Night-Heron-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E21557B373006D24CF /* 13-Yellow-crowned Night-Heron-long.mp3 */; };
+		047A21DE1557B373006D24CF /* 13-yellow-crowned-night-heron.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E31557B373006D24CF /* 13-yellow-crowned-night-heron.jpg */; };
+		047A21DF1557B373006D24CF /* 13-yellow-crowned-night-heron.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E41557B373006D24CF /* 13-yellow-crowned-night-heron.txt */; };
+		047A21E01557B373006D24CF /* 13-yellow-crowned-night-heron_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E51557B373006D24CF /* 13-yellow-crowned-night-heron_tn.jpg */; };
+		047A21E11557B373006D24CF /* 14-CarolinaChickadee-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E61557B373006D24CF /* 14-CarolinaChickadee-image.jpg */; };
+		047A21E21557B373006D24CF /* 14-CarolinaChickadee-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E71557B373006D24CF /* 14-CarolinaChickadee-image_tn.jpg */; };
+		047A21E31557B373006D24CF /* 14-CarolinaChickadee-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E81557B373006D24CF /* 14-CarolinaChickadee-long.wav */; };
+		047A21E41557B373006D24CF /* 14-CarolinaChickadee-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20E91557B373006D24CF /* 14-CarolinaChickadee-short.wav */; };
+		047A21E51557B373006D24CF /* 14-CarolinaChickadee.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20EA1557B373006D24CF /* 14-CarolinaChickadee.txt */; };
+		047A21E61557B373006D24CF /* 15-TuftedTitmouse-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20EB1557B373006D24CF /* 15-TuftedTitmouse-image.jpg */; };
+		047A21E71557B373006D24CF /* 15-TuftedTitmouse-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20EC1557B373006D24CF /* 15-TuftedTitmouse-image_tn.jpg */; };
+		047A21E81557B373006D24CF /* 15-TuftedTitmouse-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20ED1557B373006D24CF /* 15-TuftedTitmouse-long.wav */; };
+		047A21E91557B373006D24CF /* 15-TuftedTitmouse-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20EE1557B373006D24CF /* 15-TuftedTitmouse-short.wav */; };
+		047A21EA1557B373006D24CF /* 15-TuftedTitmouse.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20EF1557B373006D24CF /* 15-TuftedTitmouse.txt */; };
+		047A21EB1557B373006D24CF /* 16-CarolinaWren-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F01557B373006D24CF /* 16-CarolinaWren-image.jpg */; };
+		047A21EC1557B373006D24CF /* 16-CarolinaWren-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F11557B373006D24CF /* 16-CarolinaWren-image_tn.jpg */; };
+		047A21ED1557B373006D24CF /* 16-CarolinaWren-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F21557B373006D24CF /* 16-CarolinaWren-long.wav */; };
+		047A21EE1557B373006D24CF /* 16-CarolinaWren-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F31557B373006D24CF /* 16-CarolinaWren-short.wav */; };
+		047A21EF1557B373006D24CF /* 16-CarolinaWren.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F41557B373006D24CF /* 16-CarolinaWren.txt */; };
+		047A21F01557B373006D24CF /* 17-WinterWren-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F51557B373006D24CF /* 17-WinterWren-image.jpg */; };
+		047A21F11557B373006D24CF /* 17-WinterWren-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F61557B373006D24CF /* 17-WinterWren-image_tn.jpg */; };
+		047A21F21557B373006D24CF /* 17-WinterWren-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F71557B373006D24CF /* 17-WinterWren-long.mp3 */; };
+		047A21F31557B373006D24CF /* 17-WinterWren.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F81557B373006D24CF /* 17-WinterWren.txt */; };
+		047A21F41557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20F91557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image.jpg */; };
+		047A21F51557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20FA1557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image_tn.jpg */; };
+		047A21F61557B373006D24CF /* 18-Ruby-crowned-Kinglet-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A20FB1557B373006D24CF /* 18-Ruby-crowned-Kinglet-long.mp3 */; };
+		047A21F71557B373006D24CF /* 18-Ruby-Crowned-Kinglet.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A20FC1557B373006D24CF /* 18-Ruby-Crowned-Kinglet.txt */; };
+		047A21F81557B373006D24CF /* 19-HermitThrush-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20FD1557B373006D24CF /* 19-HermitThrush-image.jpg */; };
+		047A21F91557B373006D24CF /* 19-HermitThrush-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A20FE1557B373006D24CF /* 19-HermitThrush-image_tn.jpg */; };
+		047A21FA1557B373006D24CF /* 19-HermitThrush-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A20FF1557B373006D24CF /* 19-HermitThrush-long.mp3 */; };
+		047A21FB1557B373006D24CF /* 19-HermitThrush.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21001557B373006D24CF /* 19-HermitThrush.txt */; };
+		047A21FC1557B373006D24CF /* 2-Red-shouldered Hawk-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21011557B373006D24CF /* 2-Red-shouldered Hawk-long.wav */; };
+		047A21FD1557B373006D24CF /* 2-Red-shouldered Hawk-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21021557B373006D24CF /* 2-Red-shouldered Hawk-short.wav */; };
+		047A21FE1557B373006D24CF /* 2-Red-shouldered Hawk.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21031557B373006D24CF /* 2-Red-shouldered Hawk.txt */; };
+		047A21FF1557B373006D24CF /* 2-redshoulderedhawk-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21041557B373006D24CF /* 2-redshoulderedhawk-image.jpg */; };
+		047A22001557B373006D24CF /* 2-redshoulderedhawk-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21051557B373006D24CF /* 2-redshoulderedhawk-image_tn.jpg */; };
+		047A22011557B373006D24CF /* 20-AmericanRobin-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21061557B373006D24CF /* 20-AmericanRobin-image.jpg */; };
+		047A22021557B373006D24CF /* 20-AmericanRobin-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21071557B373006D24CF /* 20-AmericanRobin-image_tn.jpg */; };
+		047A22031557B373006D24CF /* 20-AmericanRobin-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21081557B373006D24CF /* 20-AmericanRobin-long.wav */; };
+		047A22041557B373006D24CF /* 20-AmericanRobin-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21091557B373006D24CF /* 20-AmericanRobin-short.wav */; };
+		047A22051557B373006D24CF /* 20-AmericanRobin.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A210A1557B373006D24CF /* 20-AmericanRobin.txt */; };
+		047A22061557B373006D24CF /* 21-NorthernMockingbird-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A210B1557B373006D24CF /* 21-NorthernMockingbird-image.jpg */; };
+		047A22071557B373006D24CF /* 21-NorthernMockingbird-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A210C1557B373006D24CF /* 21-NorthernMockingbird-image_tn.jpg */; };
+		047A22081557B373006D24CF /* 21-NorthernMockingbird-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A210D1557B373006D24CF /* 21-NorthernMockingbird-long.wav */; };
+		047A22091557B373006D24CF /* 21-NorthernMockingbird-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A210E1557B373006D24CF /* 21-NorthernMockingbird-short.wav */; };
+		047A220A1557B373006D24CF /* 21-NorthernMockingbird.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A210F1557B373006D24CF /* 21-NorthernMockingbird.txt */; };
+		047A220B1557B373006D24CF /* 22-CedarWaxwing-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21101557B373006D24CF /* 22-CedarWaxwing-image.jpg */; };
+		047A220C1557B373006D24CF /* 22-CedarWaxwing-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21111557B373006D24CF /* 22-CedarWaxwing-image_tn.jpg */; };
+		047A220D1557B373006D24CF /* 22-CedarWaxwing-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A21121557B373006D24CF /* 22-CedarWaxwing-long.mp3 */; };
+		047A220E1557B373006D24CF /* 22-CedarWaxwing.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21131557B373006D24CF /* 22-CedarWaxwing.txt */; };
+		047A220F1557B373006D24CF /* 23-Yellow-rumpedWarbler-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21141557B373006D24CF /* 23-Yellow-rumpedWarbler-image.jpg */; };
+		047A22101557B373006D24CF /* 23-Yellow-rumpedWarbler-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21151557B373006D24CF /* 23-Yellow-rumpedWarbler-image_tn.jpg */; };
+		047A22111557B373006D24CF /* 23-Yellow-rumpedWarbler-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A21161557B373006D24CF /* 23-Yellow-rumpedWarbler-long.mp3 */; };
+		047A22121557B373006D24CF /* 23-Yellow-rumpedWarbler.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21171557B373006D24CF /* 23-Yellow-rumpedWarbler.txt */; };
+		047A22131557B373006D24CF /* 24-Orange-crownedWarbler-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21181557B373006D24CF /* 24-Orange-crownedWarbler-image.jpg */; };
+		047A22141557B373006D24CF /* 24-Orange-crownedWarbler-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21191557B373006D24CF /* 24-Orange-crownedWarbler-image_tn.jpg */; };
+		047A22151557B373006D24CF /* 24-Orange-crownedWarbler-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A211A1557B373006D24CF /* 24-Orange-crownedWarbler-long.mp3 */; };
+		047A22161557B373006D24CF /* 24-Orange-crownedWarbler.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A211B1557B373006D24CF /* 24-Orange-crownedWarbler.txt */; };
+		047A22171557B373006D24CF /* 25-CommonYellowthroat-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A211C1557B373006D24CF /* 25-CommonYellowthroat-image.jpg */; };
+		047A22181557B373006D24CF /* 25-CommonYellowthroat-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A211D1557B373006D24CF /* 25-CommonYellowthroat-image_tn.jpg */; };
+		047A22191557B373006D24CF /* 25-CommonYellowthroat-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A211E1557B373006D24CF /* 25-CommonYellowthroat-long.wav */; };
+		047A221A1557B373006D24CF /* 25-CommonYellowthroat-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A211F1557B373006D24CF /* 25-CommonYellowthroat-short.wav */; };
+		047A221B1557B373006D24CF /* 25-CommonYellowthroat.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21201557B373006D24CF /* 25-CommonYellowthroat.txt */; };
+		047A221C1557B373006D24CF /* 26-PineWarbler-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21211557B373006D24CF /* 26-PineWarbler-image.jpg */; };
+		047A221D1557B373006D24CF /* 26-PineWarbler-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21221557B373006D24CF /* 26-PineWarbler-image_tn.jpg */; };
+		047A221E1557B373006D24CF /* 26-PineWarbler-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21231557B373006D24CF /* 26-PineWarbler-long.wav */; };
+		047A221F1557B373006D24CF /* 26-PineWarbler-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21241557B373006D24CF /* 26-PineWarbler-short.wav */; };
+		047A22201557B373006D24CF /* 26-PineWarbler.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21251557B373006D24CF /* 26-PineWarbler.txt */; };
+		047A22211557B373006D24CF /* 27-NorthernCardinal-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21261557B373006D24CF /* 27-NorthernCardinal-image.jpg */; };
+		047A22221557B373006D24CF /* 27-NorthernCardinal-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21271557B373006D24CF /* 27-NorthernCardinal-image_tn.jpg */; };
+		047A22231557B373006D24CF /* 27-NorthernCardinal-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21281557B373006D24CF /* 27-NorthernCardinal-long.wav */; };
+		047A22241557B373006D24CF /* 27-NorthernCardinal-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21291557B373006D24CF /* 27-NorthernCardinal-short.wav */; };
+		047A22251557B373006D24CF /* 27-NorthernCardinal.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A212A1557B373006D24CF /* 27-NorthernCardinal.txt */; };
+		047A22261557B373006D24CF /* 28-White-throatedSparrow-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A212B1557B373006D24CF /* 28-White-throatedSparrow-image.jpg */; };
+		047A22271557B373006D24CF /* 28-White-throatedSparrow-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A212C1557B373006D24CF /* 28-White-throatedSparrow-image_tn.jpg */; };
+		047A22281557B373006D24CF /* 28-White-throatedSparrow-long.mp3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A212D1557B373006D24CF /* 28-White-throatedSparrow-long.mp3.mp3 */; };
+		047A22291557B373006D24CF /* 28-White-throatedSparrow.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A212E1557B373006D24CF /* 28-White-throatedSparrow.txt */; };
+		047A222A1557B373006D24CF /* 29-Blue-grayGnatcatcher-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A212F1557B373006D24CF /* 29-Blue-grayGnatcatcher-image.jpg */; };
+		047A222B1557B373006D24CF /* 29-Blue-grayGnatcatcher-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21301557B373006D24CF /* 29-Blue-grayGnatcatcher-image_tn.jpg */; };
+		047A222C1557B373006D24CF /* 29-Blue-grayGnatcatcher-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21311557B373006D24CF /* 29-Blue-grayGnatcatcher-long.wav */; };
+		047A222D1557B373006D24CF /* 29-Blue-grayGnatcatcher-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21321557B373006D24CF /* 29-Blue-grayGnatcatcher-short.wav */; };
+		047A222E1557B373006D24CF /* 29-Blue-grayGnatcatcher.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21331557B373006D24CF /* 29-Blue-grayGnatcatcher.txt */; };
+		047A222F1557B373006D24CF /* 3-MourningDove-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21341557B373006D24CF /* 3-MourningDove-image.jpg */; };
+		047A22301557B373006D24CF /* 3-MourningDove-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21351557B373006D24CF /* 3-MourningDove-image_tn.jpg */; };
+		047A22311557B373006D24CF /* 3-MourningDove-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21361557B373006D24CF /* 3-MourningDove-long.wav */; };
+		047A22321557B373006D24CF /* 3-MourningDove-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21371557B373006D24CF /* 3-MourningDove-short.wav */; };
+		047A22331557B373006D24CF /* 3-MourningDove.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21381557B373006D24CF /* 3-MourningDove.txt */; };
+		047A22341557B373006D24CF /* 30-AmericanGoldfinch-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21391557B373006D24CF /* 30-AmericanGoldfinch-image.jpg */; };
+		047A22351557B373006D24CF /* 30-AmericanGoldfinch-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A213A1557B373006D24CF /* 30-AmericanGoldfinch-image_tn.jpg */; };
+		047A22361557B373006D24CF /* 30-AmericanGoldfinch-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A213B1557B373006D24CF /* 30-AmericanGoldfinch-long.mp3 */; };
+		047A22371557B373006D24CF /* 30-AmericanGoldfinch.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A213C1557B373006D24CF /* 30-AmericanGoldfinch.txt */; };
+		047A22381557B373006D24CF /* 31-coopershawk-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A213D1557B373006D24CF /* 31-coopershawk-image.jpg */; };
+		047A22391557B373006D24CF /* 31-coopershawk-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A213E1557B373006D24CF /* 31-coopershawk-image_tn.jpg */; };
+		047A223A1557B373006D24CF /* 31-CoopersHawk-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A213F1557B373006D24CF /* 31-CoopersHawk-long.mp3 */; };
+		047A223B1557B373006D24CF /* 31-coopershawk.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21401557B373006D24CF /* 31-coopershawk.txt */; };
+		047A223C1557B373006D24CF /* 32-White-wingedDove-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21411557B373006D24CF /* 32-White-wingedDove-image.jpg */; };
+		047A223D1557B373006D24CF /* 32-White-wingedDove-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21421557B373006D24CF /* 32-White-wingedDove-image_tn.jpg */; };
+		047A223E1557B373006D24CF /* 32-White-wingedDove-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A21431557B373006D24CF /* 32-White-wingedDove-long.mp3 */; };
+		047A223F1557B373006D24CF /* 32-White-wingedDove.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21441557B373006D24CF /* 32-White-wingedDove.txt */; };
+		047A22401557B373006D24CF /* 33-Ruby-throatedHummingbird-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21451557B373006D24CF /* 33-Ruby-throatedHummingbird-image.jpg */; };
+		047A22411557B373006D24CF /* 33-Ruby-throatedHummingbird-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21461557B373006D24CF /* 33-Ruby-throatedHummingbird-image_tn.jpg */; };
+		047A22421557B373006D24CF /* 33-Ruby-throatedHummingbird-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A21471557B373006D24CF /* 33-Ruby-throatedHummingbird-long.mp3 */; };
+		047A22431557B373006D24CF /* 33-Ruby-throatedHummingbird.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21481557B373006D24CF /* 33-Ruby-throatedHummingbird.txt */; };
+		047A22441557B373006D24CF /* 34-GreatHornedOwl-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21491557B373006D24CF /* 34-GreatHornedOwl-image.jpg */; };
+		047A22451557B373006D24CF /* 34-GreatHornedOwl-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A214A1557B373006D24CF /* 34-GreatHornedOwl-image_tn.jpg */; };
+		047A22461557B373006D24CF /* 34-GreatHornedOwl-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A214B1557B373006D24CF /* 34-GreatHornedOwl-long.wav */; };
+		047A22471557B373006D24CF /* 34-GreatHornedOwl-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A214C1557B373006D24CF /* 34-GreatHornedOwl-short.wav */; };
+		047A22481557B373006D24CF /* 34-GreatHornedOwl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A214D1557B373006D24CF /* 34-GreatHornedOwl.txt */; };
+		047A22491557B373006D24CF /* 35-Yellow-belliedSapsucker-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A214E1557B373006D24CF /* 35-Yellow-belliedSapsucker-image.jpg */; };
+		047A224A1557B373006D24CF /* 35-Yellow-belliedSapsucker-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A214F1557B373006D24CF /* 35-Yellow-belliedSapsucker-image_tn.jpg */; };
+		047A224B1557B373006D24CF /* 35-Yellow-belliedSapsucker-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A21501557B373006D24CF /* 35-Yellow-belliedSapsucker-long.mp3 */; };
+		047A224C1557B373006D24CF /* 35-Yellow-belliedSapsucker.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21511557B373006D24CF /* 35-Yellow-belliedSapsucker.txt */; };
+		047A224D1557B373006D24CF /* 36-EasternPhoebe-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21521557B373006D24CF /* 36-EasternPhoebe-image.jpg */; };
+		047A224E1557B373006D24CF /* 36-EasternPhoebe-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21531557B373006D24CF /* 36-EasternPhoebe-image_tn.jpg */; };
+		047A224F1557B373006D24CF /* 36-EasternPhoebe-long.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 047A21541557B373006D24CF /* 36-EasternPhoebe-long.mp3 */; };
+		047A22501557B373006D24CF /* 36-EasternPhoebe.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21551557B373006D24CF /* 36-EasternPhoebe.txt */; };
+		047A22511557B373006D24CF /* 4-EasternScreech-Owl-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21561557B373006D24CF /* 4-EasternScreech-Owl-image.jpg */; };
+		047A22521557B373006D24CF /* 4-EasternScreech-Owl-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21571557B373006D24CF /* 4-EasternScreech-Owl-image_tn.jpg */; };
+		047A22531557B373006D24CF /* 4-EasternScreech-Owl-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21581557B373006D24CF /* 4-EasternScreech-Owl-long.wav */; };
+		047A22541557B373006D24CF /* 4-EasternScreech-Owl-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21591557B373006D24CF /* 4-EasternScreech-Owl-short.wav */; };
+		047A22551557B373006D24CF /* 4-EasternScreech-Owl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A215A1557B373006D24CF /* 4-EasternScreech-Owl.txt */; };
+		047A22561557B373006D24CF /* 5-DownyWoodpecker-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A215B1557B373006D24CF /* 5-DownyWoodpecker-image.jpg */; };
+		047A22571557B373006D24CF /* 5-DownyWoodpecker-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A215C1557B373006D24CF /* 5-DownyWoodpecker-image_tn.jpg */; };
+		047A22581557B373006D24CF /* 5-DownyWoodpecker-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A215D1557B373006D24CF /* 5-DownyWoodpecker-short.wav */; };
+		047A22591557B373006D24CF /* 5-DownyWoodpecker.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A215E1557B373006D24CF /* 5-DownyWoodpecker.txt */; };
+		047A225A1557B373006D24CF /* 6-Red-belliedWoodpecker-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A215F1557B373006D24CF /* 6-Red-belliedWoodpecker-image.jpg */; };
+		047A225B1557B373006D24CF /* 6-Red-belliedWoodpecker-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21601557B373006D24CF /* 6-Red-belliedWoodpecker-image_tn.jpg */; };
+		047A225C1557B373006D24CF /* 6-Red-belliedWoodpecker-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21611557B373006D24CF /* 6-Red-belliedWoodpecker-long.wav */; };
+		047A225D1557B373006D24CF /* 6-Red-belliedWoodpecker-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21621557B373006D24CF /* 6-Red-belliedWoodpecker-short.wav */; };
+		047A225E1557B373006D24CF /* 6-Red-belliedWoodpecker.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21631557B373006D24CF /* 6-Red-belliedWoodpecker.txt */; };
+		047A225F1557B373006D24CF /* 7-BlueJay-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21641557B373006D24CF /* 7-BlueJay-image.jpg */; };
+		047A22601557B373006D24CF /* 7-BlueJay-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21651557B373006D24CF /* 7-BlueJay-image_tn.jpg */; };
+		047A22611557B373006D24CF /* 7-BlueJay-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21661557B373006D24CF /* 7-BlueJay-long.wav */; };
+		047A22621557B373006D24CF /* 7-BlueJay-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21671557B373006D24CF /* 7-BlueJay-short.wav */; };
+		047A22631557B373006D24CF /* 7-BlueJay.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21681557B373006D24CF /* 7-BlueJay.txt */; };
+		047A22641557B373006D24CF /* 8-PileatedWoodpecker-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21691557B373006D24CF /* 8-PileatedWoodpecker-image.jpg */; };
+		047A22651557B373006D24CF /* 8-PileatedWoodpecker-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A216A1557B373006D24CF /* 8-PileatedWoodpecker-image_tn.jpg */; };
+		047A22661557B373006D24CF /* 8-PileatedWoodpecker-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A216B1557B373006D24CF /* 8-PileatedWoodpecker-short.wav */; };
+		047A22671557B373006D24CF /* 8-PileatedWoodpecker.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A216C1557B373006D24CF /* 8-PileatedWoodpecker.txt */; };
+		047A22681557B373006D24CF /* 9-White-eyedVireo-image.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A216D1557B373006D24CF /* 9-White-eyedVireo-image.jpg */; };
+		047A22691557B373006D24CF /* 9-White-eyedVireo-image_tn.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A216E1557B373006D24CF /* 9-White-eyedVireo-image_tn.jpg */; };
+		047A226A1557B373006D24CF /* 9-White-eyedVireo-long.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A216F1557B373006D24CF /* 9-White-eyedVireo-long.wav */; };
+		047A226B1557B373006D24CF /* 9-White-eyedVireo-short.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21701557B373006D24CF /* 9-White-eyedVireo-short.wav */; };
+		047A226C1557B373006D24CF /* 9-White-eyedVireo.txt in Resources */ = {isa = PBXBuildFile; fileRef = 047A21711557B373006D24CF /* 9-White-eyedVireo.txt */; };
+		047A226D1557B373006D24CF /* about_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21721557B373006D24CF /* about_icon.png */; };
+		047A226E1557B373006D24CF /* arboretum_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21731557B373006D24CF /* arboretum_logo.png */; };
+		047A226F1557B373006D24CF /* arrow_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21741557B373006D24CF /* arrow_button_pressed.png */; };
+		047A22701557B373006D24CF /* arrow_button_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21751557B373006D24CF /* arrow_button_unpressed.png */; };
+		047A22711557B373006D24CF /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21761557B373006D24CF /* background.png */; };
+		047A22721557B373006D24CF /* bird_watch.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21771557B373006D24CF /* bird_watch.png */; };
+		047A22731557B373006D24CF /* category_plank.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21781557B373006D24CF /* category_plank.png */; };
+		047A22741557B373006D24CF /* category_plank_new.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21791557B373006D24CF /* category_plank_new.png */; };
+		047A22751557B373006D24CF /* descr.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A217A1557B373006D24CF /* descr.png */; };
+		047A22761557B373006D24CF /* description_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A217B1557B373006D24CF /* description_icon.png */; };
+		047A22771557B373006D24CF /* down_arrow_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A217C1557B373006D24CF /* down_arrow_pressed.png */; };
+		047A22781557B373006D24CF /* down_arrow_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A217D1557B373006D24CF /* down_arrow_unpressed.png */; };
+		047A22791557B373006D24CF /* end_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A217E1557B373006D24CF /* end_button_pressed.png */; };
+		047A227A1557B373006D24CF /* end_button_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A217F1557B373006D24CF /* end_button_unpressed.png */; };
+		047A227B1557B373006D24CF /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21801557B373006D24CF /* icon.png */; };
+		047A227C1557B373006D24CF /* icon_quiz_inactive.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21811557B373006D24CF /* icon_quiz_inactive.png */; };
+		047A227D1557B373006D24CF /* list_of_birds_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21821557B373006D24CF /* list_of_birds_icon.png */; };
+		047A227E1557B373006D24CF /* list_picture_border.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21831557B373006D24CF /* list_picture_border.png */; };
+		047A227F1557B373006D24CF /* list_plank.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21841557B373006D24CF /* list_plank.png */; };
+		047A22801557B373006D24CF /* main_button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21851557B373006D24CF /* main_button.jpg */; };
+		047A22811557B373006D24CF /* main_menu_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21861557B373006D24CF /* main_menu_background.png */; };
+		047A22821557B373006D24CF /* main_menu_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21871557B373006D24CF /* main_menu_logo.png */; };
+		047A22831557B373006D24CF /* menu_background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 047A21881557B373006D24CF /* menu_background.jpg */; };
+		047A22841557B373006D24CF /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21891557B373006D24CF /* music.png */; };
+		047A22851557B373006D24CF /* music_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A218A1557B373006D24CF /* music_icon.png */; };
+		047A22861557B373006D24CF /* ok_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A218B1557B373006D24CF /* ok_button_pressed.png */; };
+		047A22871557B373006D24CF /* ok_button_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A218C1557B373006D24CF /* ok_button_unpressed.png */; };
+		047A22881557B373006D24CF /* play_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A218D1557B373006D24CF /* play_button_pressed.png */; };
+		047A22891557B373006D24CF /* play_button_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A218E1557B373006D24CF /* play_button_unpressed.png */; };
+		047A228A1557B373006D24CF /* resuts_overview_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A218F1557B373006D24CF /* resuts_overview_background.png */; };
+		047A228B1557B373006D24CF /* sight.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21901557B373006D24CF /* sight.png */; };
+		047A228C1557B373006D24CF /* speaker_normal.9.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21911557B373006D24CF /* speaker_normal.9.png */; };
+		047A228D1557B373006D24CF /* start_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21921557B373006D24CF /* start_button_pressed.png */; };
+		047A228E1557B373006D24CF /* start_button_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21931557B373006D24CF /* start_button_unpressed.png */; };
+		047A228F1557B373006D24CF /* textbox_for_long_description.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21941557B373006D24CF /* textbox_for_long_description.png */; };
+		047A22901557B373006D24CF /* textxbox_for_sounds.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21951557B373006D24CF /* textxbox_for_sounds.png */; };
+		047A22911557B373006D24CF /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = 047A21961557B373006D24CF /* Thumbs.db */; };
+		047A22921557B373006D24CF /* top_bar.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21971557B373006D24CF /* top_bar.png */; };
+		047A22931557B373006D24CF /* trainer_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21981557B373006D24CF /* trainer_icon.png */; };
+		047A22941557B373006D24CF /* trainer_playback_controls_background.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21991557B373006D24CF /* trainer_playback_controls_background.png */; };
+		047A22951557B373006D24CF /* up_arrow_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A219A1557B373006D24CF /* up_arrow_pressed.png */; };
+		047A22961557B373006D24CF /* up_arrow_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A219B1557B373006D24CF /* up_arrow_unpressed.png */; };
+		047A22971557B373006D24CF /* zoom.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A219C1557B373006D24CF /* zoom.png */; };
+		047A22981557B373006D24CF /* zoom_in_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A219D1557B373006D24CF /* zoom_in_button_pressed.png */; };
+		047A22991557B373006D24CF /* zoom_in_button_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A219E1557B373006D24CF /* zoom_in_button_unpressed.png */; };
+		047A229A1557B373006D24CF /* zoom_out_button_pressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A219F1557B373006D24CF /* zoom_out_button_pressed.png */; };
+		047A229B1557B373006D24CF /* zoom_out_button_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21A01557B373006D24CF /* zoom_out_button_unpressed.png */; };
+		047A229C1557B373006D24CF /* rewind.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A21A11557B373006D24CF /* rewind.png */; };
+		047A229D1557B373006D24CF /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A21A31557B373006D24CF /* RootViewController.m */; };
+		047A229E1557B373006D24CF /* SwitcherCellVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A21A51557B373006D24CF /* SwitcherCellVC.m */; };
+		047A229F1557B373006D24CF /* SwitcherCellVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047A21A61557B373006D24CF /* SwitcherCellVC.xib */; };
+		047A22A01557B373006D24CF /* win.wav in Resources */ = {isa = PBXBuildFile; fileRef = 047A21A71557B373006D24CF /* win.wav */; };
+		047A22A21557B3B5006D24CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A22A11557B3B5006D24CF /* libsqlite3.dylib */; };
+		047A22A41557B3FA006D24CF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A22A31557B3FA006D24CF /* AudioToolbox.framework */; };
+		047A22A61557B414006D24CF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A22A51557B414006D24CF /* AVFoundation.framework */; };
+		047A22AD1557B500006D24CF /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A22AC1557B500006D24CF /* MapKit.framework */; };
+		047A22C11557E17E006D24CF /* BirdAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 047A22C01557E17E006D24CF /* BirdAnnotation.m */; };
+		047A22C31557E27E006D24CF /* trainer_start_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A22C21557E27E006D24CF /* trainer_start_icon.png */; };
+		047A22C51557E292006D24CF /* main_menu_button_unpressed.png in Resources */ = {isa = PBXBuildFile; fileRef = 047A22C41557E292006D24CF /* main_menu_button_unpressed.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		047A206E1557B31F006D24CF /* birds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = birds.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		047A20721557B31F006D24CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		047A20741557B31F006D24CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		047A20761557B31F006D24CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		047A20891557B373006D24CF /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		047A208A1557B373006D24CF /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		047A208B1557B373006D24CF /* AboutViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AboutViewController.xib; sourceTree = "<group>"; };
+		047A208C1557B373006D24CF /* AlphabetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphabetViewController.h; sourceTree = "<group>"; };
+		047A208D1557B373006D24CF /* AlphabetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphabetViewController.m; sourceTree = "<group>"; };
+		047A208E1557B373006D24CF /* AlphabetViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AlphabetViewController.xib; sourceTree = "<group>"; };
+		047A20901557B373006D24CF /* bidrs.sql */ = {isa = PBXFileReference; lastKnownFileType = file; path = bidrs.sql; sourceTree = "<group>"; };
+		047A20911557B373006D24CF /* Bird.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bird.h; sourceTree = "<group>"; };
+		047A20921557B373006D24CF /* Bird.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bird.m; sourceTree = "<group>"; };
+		047A20931557B373006D24CF /* BirdCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdCell.h; sourceTree = "<group>"; };
+		047A20941557B373006D24CF /* BirdCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdCell.m; sourceTree = "<group>"; };
+		047A20951557B373006D24CF /* BirdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BirdCell.xib; sourceTree = "<group>"; };
+		047A20961557B373006D24CF /* birds-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "birds-Info.plist"; sourceTree = "<group>"; };
+		047A20971557B373006D24CF /* birds-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "birds-Prefix.pch"; sourceTree = "<group>"; };
+		047A20981557B373006D24CF /* birdsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = birdsAppDelegate.h; sourceTree = "<group>"; };
+		047A20991557B373006D24CF /* birdsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = birdsAppDelegate.m; sourceTree = "<group>"; };
+		047A209A1557B373006D24CF /* DesciptionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesciptionVC.h; sourceTree = "<group>"; };
+		047A209B1557B373006D24CF /* DesciptionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesciptionVC.m; sourceTree = "<group>"; };
+		047A209C1557B373006D24CF /* DesciptionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DesciptionVC.xib; sourceTree = "<group>"; };
+		047A209D1557B373006D24CF /* DetailTabController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailTabController.h; sourceTree = "<group>"; };
+		047A209E1557B373006D24CF /* DetailTabController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailTabController.m; sourceTree = "<group>"; };
+		047A209F1557B373006D24CF /* DetailTabController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DetailTabController.xib; sourceTree = "<group>"; };
+		047A20A31557B373006D24CF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		047A20A51557B373006D24CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = MainWindow.xib; sourceTree = "<group>"; };
+		047A20A71557B373006D24CF /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = RootViewController.xib; sourceTree = "<group>"; };
+		047A20A91557B373006D24CF /* Facebook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Facebook.h; sourceTree = "<group>"; };
+		047A20AA1557B373006D24CF /* FBConnect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBConnect.h; sourceTree = "<group>"; };
+		047A20AB1557B373006D24CF /* FBDialog.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FBDialog.bundle; sourceTree = "<group>"; };
+		047A20AC1557B373006D24CF /* FBDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBDialog.h; sourceTree = "<group>"; };
+		047A20AD1557B373006D24CF /* FBFrictionlessRequestSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBFrictionlessRequestSettings.h; sourceTree = "<group>"; };
+		047A20AE1557B373006D24CF /* FBLoginDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBLoginDialog.h; sourceTree = "<group>"; };
+		047A20AF1557B373006D24CF /* FBRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBRequest.h; sourceTree = "<group>"; };
+		047A20B01557B373006D24CF /* JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSON.h; sourceTree = "<group>"; };
+		047A20B11557B373006D24CF /* libfacebook_ios_sdk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libfacebook_ios_sdk.a; sourceTree = "<group>"; };
+		047A20B21557B373006D24CF /* NSObject+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+SBJSON.h"; sourceTree = "<group>"; };
+		047A20B31557B373006D24CF /* NSString+SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+SBJSON.h"; sourceTree = "<group>"; };
+		047A20B41557B373006D24CF /* SBJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJSON.h; sourceTree = "<group>"; };
+		047A20B51557B373006D24CF /* SBJsonBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonBase.h; sourceTree = "<group>"; };
+		047A20B61557B373006D24CF /* SBJsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonParser.h; sourceTree = "<group>"; };
+		047A20B71557B373006D24CF /* SBJsonWriter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SBJsonWriter.h; sourceTree = "<group>"; };
+		047A20B81557B373006D24CF /* forward.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = forward.png; path = ../forward.png; sourceTree = "<group>"; };
+		047A20B91557B373006D24CF /* GameOptions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = GameOptions.plist; sourceTree = "<group>"; };
+		047A20BA1557B373006D24CF /* GameOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameOptionsViewController.h; sourceTree = "<group>"; };
+		047A20BB1557B373006D24CF /* GameOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameOptionsViewController.m; sourceTree = "<group>"; };
+		047A20BC1557B373006D24CF /* GameOptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameOptionsViewController.xib; sourceTree = "<group>"; };
+		047A20BD1557B373006D24CF /* GameVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameVC.h; sourceTree = "<group>"; };
+		047A20BE1557B373006D24CF /* GameVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameVC.m; sourceTree = "<group>"; };
+		047A20BF1557B373006D24CF /* GameVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameVC.xib; sourceTree = "<group>"; };
+		047A20C41557B373006D24CF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		047A20C51557B373006D24CF /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		047A20C61557B373006D24CF /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		047A20C71557B373006D24CF /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		047A20C81557B373006D24CF /* MusicVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicVC.h; sourceTree = "<group>"; };
+		047A20C91557B373006D24CF /* MusicVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicVC.m; sourceTree = "<group>"; };
+		047A20CA1557B373006D24CF /* MusicVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicVC.xib; sourceTree = "<group>"; };
+		047A20CB1557B373006D24CF /* NSMutableArray+Shuffle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Shuffle.h"; sourceTree = "<group>"; };
+		047A20CC1557B373006D24CF /* NSMutableArray+Shuffle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Shuffle.m"; sourceTree = "<group>"; };
+		047A20CD1557B373006D24CF /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = ../pause.png; sourceTree = "<group>"; };
+		047A20CE1557B373006D24CF /* play.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = play.png; path = ../play.png; sourceTree = "<group>"; };
+		047A20D01557B373006D24CF /* 1-greenheron-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1-greenheron-image.jpg"; sourceTree = "<group>"; };
+		047A20D11557B373006D24CF /* 1-greenheron-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "1-greenheron-image_tn.jpg"; sourceTree = "<group>"; };
+		047A20D21557B373006D24CF /* 1-GreenHeron-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "1-GreenHeron-short.wav"; sourceTree = "<group>"; };
+		047A20D31557B373006D24CF /* 1-greenheron.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "1-greenheron.txt"; sourceTree = "<group>"; };
+		047A20D41557B373006D24CF /* 10-BarredOwl-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "10-BarredOwl-image.jpg"; sourceTree = "<group>"; };
+		047A20D51557B373006D24CF /* 10-BarredOwl-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "10-BarredOwl-image_tn.jpg"; sourceTree = "<group>"; };
+		047A20D61557B373006D24CF /* 10-BarredOwl-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "10-BarredOwl-long.wav"; sourceTree = "<group>"; };
+		047A20D71557B373006D24CF /* 10-BarredOwl-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "10-BarredOwl-short.wav"; sourceTree = "<group>"; };
+		047A20D81557B373006D24CF /* 10-BarredOwl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "10-BarredOwl.txt"; sourceTree = "<group>"; };
+		047A20D91557B373006D24CF /* 11-AmericanCrow-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "11-AmericanCrow-long.wav"; sourceTree = "<group>"; };
+		047A20DA1557B373006D24CF /* 11-AmericanCrow-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "11-AmericanCrow-short.wav"; sourceTree = "<group>"; };
+		047A20DB1557B373006D24CF /* 11-americancrow.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "11-americancrow.jpg"; sourceTree = "<group>"; };
+		047A20DC1557B373006D24CF /* 11-americancrow.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "11-americancrow.txt"; sourceTree = "<group>"; };
+		047A20DD1557B373006D24CF /* 11-americancrow_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "11-americancrow_tn.jpg"; sourceTree = "<group>"; };
+		047A20DE1557B373006D24CF /* 12-black-crowned night-heron-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12-black-crowned night-heron-image.jpg"; sourceTree = "<group>"; };
+		047A20DF1557B373006D24CF /* 12-black-crowned night-heron-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "12-black-crowned night-heron-image_tn.jpg"; sourceTree = "<group>"; };
+		047A20E01557B373006D24CF /* 12-black-crowned night-heron.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "12-black-crowned night-heron.txt"; sourceTree = "<group>"; };
+		047A20E11557B373006D24CF /* 12-Black-crownedNight-Heron-long.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "12-Black-crownedNight-Heron-long.mp4"; sourceTree = "<group>"; };
+		047A20E21557B373006D24CF /* 13-Yellow-crowned Night-Heron-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "13-Yellow-crowned Night-Heron-long.mp3"; sourceTree = "<group>"; };
+		047A20E31557B373006D24CF /* 13-yellow-crowned-night-heron.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "13-yellow-crowned-night-heron.jpg"; sourceTree = "<group>"; };
+		047A20E41557B373006D24CF /* 13-yellow-crowned-night-heron.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "13-yellow-crowned-night-heron.txt"; sourceTree = "<group>"; };
+		047A20E51557B373006D24CF /* 13-yellow-crowned-night-heron_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "13-yellow-crowned-night-heron_tn.jpg"; sourceTree = "<group>"; };
+		047A20E61557B373006D24CF /* 14-CarolinaChickadee-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "14-CarolinaChickadee-image.jpg"; sourceTree = "<group>"; };
+		047A20E71557B373006D24CF /* 14-CarolinaChickadee-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "14-CarolinaChickadee-image_tn.jpg"; sourceTree = "<group>"; };
+		047A20E81557B373006D24CF /* 14-CarolinaChickadee-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "14-CarolinaChickadee-long.wav"; sourceTree = "<group>"; };
+		047A20E91557B373006D24CF /* 14-CarolinaChickadee-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "14-CarolinaChickadee-short.wav"; sourceTree = "<group>"; };
+		047A20EA1557B373006D24CF /* 14-CarolinaChickadee.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "14-CarolinaChickadee.txt"; sourceTree = "<group>"; };
+		047A20EB1557B373006D24CF /* 15-TuftedTitmouse-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "15-TuftedTitmouse-image.jpg"; sourceTree = "<group>"; };
+		047A20EC1557B373006D24CF /* 15-TuftedTitmouse-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "15-TuftedTitmouse-image_tn.jpg"; sourceTree = "<group>"; };
+		047A20ED1557B373006D24CF /* 15-TuftedTitmouse-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "15-TuftedTitmouse-long.wav"; sourceTree = "<group>"; };
+		047A20EE1557B373006D24CF /* 15-TuftedTitmouse-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "15-TuftedTitmouse-short.wav"; sourceTree = "<group>"; };
+		047A20EF1557B373006D24CF /* 15-TuftedTitmouse.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "15-TuftedTitmouse.txt"; sourceTree = "<group>"; };
+		047A20F01557B373006D24CF /* 16-CarolinaWren-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "16-CarolinaWren-image.jpg"; sourceTree = "<group>"; };
+		047A20F11557B373006D24CF /* 16-CarolinaWren-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "16-CarolinaWren-image_tn.jpg"; sourceTree = "<group>"; };
+		047A20F21557B373006D24CF /* 16-CarolinaWren-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "16-CarolinaWren-long.wav"; sourceTree = "<group>"; };
+		047A20F31557B373006D24CF /* 16-CarolinaWren-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "16-CarolinaWren-short.wav"; sourceTree = "<group>"; };
+		047A20F41557B373006D24CF /* 16-CarolinaWren.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "16-CarolinaWren.txt"; sourceTree = "<group>"; };
+		047A20F51557B373006D24CF /* 17-WinterWren-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "17-WinterWren-image.jpg"; sourceTree = "<group>"; };
+		047A20F61557B373006D24CF /* 17-WinterWren-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "17-WinterWren-image_tn.jpg"; sourceTree = "<group>"; };
+		047A20F71557B373006D24CF /* 17-WinterWren-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "17-WinterWren-long.mp3"; sourceTree = "<group>"; };
+		047A20F81557B373006D24CF /* 17-WinterWren.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "17-WinterWren.txt"; sourceTree = "<group>"; };
+		047A20F91557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "18-Ruby-Crowned-Kinglet-image.jpg"; sourceTree = "<group>"; };
+		047A20FA1557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "18-Ruby-Crowned-Kinglet-image_tn.jpg"; sourceTree = "<group>"; };
+		047A20FB1557B373006D24CF /* 18-Ruby-crowned-Kinglet-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "18-Ruby-crowned-Kinglet-long.mp3"; sourceTree = "<group>"; };
+		047A20FC1557B373006D24CF /* 18-Ruby-Crowned-Kinglet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "18-Ruby-Crowned-Kinglet.txt"; sourceTree = "<group>"; };
+		047A20FD1557B373006D24CF /* 19-HermitThrush-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "19-HermitThrush-image.jpg"; sourceTree = "<group>"; };
+		047A20FE1557B373006D24CF /* 19-HermitThrush-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "19-HermitThrush-image_tn.jpg"; sourceTree = "<group>"; };
+		047A20FF1557B373006D24CF /* 19-HermitThrush-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "19-HermitThrush-long.mp3"; sourceTree = "<group>"; };
+		047A21001557B373006D24CF /* 19-HermitThrush.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "19-HermitThrush.txt"; sourceTree = "<group>"; };
+		047A21011557B373006D24CF /* 2-Red-shouldered Hawk-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "2-Red-shouldered Hawk-long.wav"; sourceTree = "<group>"; };
+		047A21021557B373006D24CF /* 2-Red-shouldered Hawk-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "2-Red-shouldered Hawk-short.wav"; sourceTree = "<group>"; };
+		047A21031557B373006D24CF /* 2-Red-shouldered Hawk.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "2-Red-shouldered Hawk.txt"; sourceTree = "<group>"; };
+		047A21041557B373006D24CF /* 2-redshoulderedhawk-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2-redshoulderedhawk-image.jpg"; sourceTree = "<group>"; };
+		047A21051557B373006D24CF /* 2-redshoulderedhawk-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "2-redshoulderedhawk-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21061557B373006D24CF /* 20-AmericanRobin-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "20-AmericanRobin-image.jpg"; sourceTree = "<group>"; };
+		047A21071557B373006D24CF /* 20-AmericanRobin-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "20-AmericanRobin-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21081557B373006D24CF /* 20-AmericanRobin-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "20-AmericanRobin-long.wav"; sourceTree = "<group>"; };
+		047A21091557B373006D24CF /* 20-AmericanRobin-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "20-AmericanRobin-short.wav"; sourceTree = "<group>"; };
+		047A210A1557B373006D24CF /* 20-AmericanRobin.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "20-AmericanRobin.txt"; sourceTree = "<group>"; };
+		047A210B1557B373006D24CF /* 21-NorthernMockingbird-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "21-NorthernMockingbird-image.jpg"; sourceTree = "<group>"; };
+		047A210C1557B373006D24CF /* 21-NorthernMockingbird-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "21-NorthernMockingbird-image_tn.jpg"; sourceTree = "<group>"; };
+		047A210D1557B373006D24CF /* 21-NorthernMockingbird-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "21-NorthernMockingbird-long.wav"; sourceTree = "<group>"; };
+		047A210E1557B373006D24CF /* 21-NorthernMockingbird-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "21-NorthernMockingbird-short.wav"; sourceTree = "<group>"; };
+		047A210F1557B373006D24CF /* 21-NorthernMockingbird.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "21-NorthernMockingbird.txt"; sourceTree = "<group>"; };
+		047A21101557B373006D24CF /* 22-CedarWaxwing-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "22-CedarWaxwing-image.jpg"; sourceTree = "<group>"; };
+		047A21111557B373006D24CF /* 22-CedarWaxwing-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "22-CedarWaxwing-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21121557B373006D24CF /* 22-CedarWaxwing-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "22-CedarWaxwing-long.mp3"; sourceTree = "<group>"; };
+		047A21131557B373006D24CF /* 22-CedarWaxwing.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "22-CedarWaxwing.txt"; sourceTree = "<group>"; };
+		047A21141557B373006D24CF /* 23-Yellow-rumpedWarbler-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "23-Yellow-rumpedWarbler-image.jpg"; sourceTree = "<group>"; };
+		047A21151557B373006D24CF /* 23-Yellow-rumpedWarbler-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "23-Yellow-rumpedWarbler-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21161557B373006D24CF /* 23-Yellow-rumpedWarbler-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "23-Yellow-rumpedWarbler-long.mp3"; sourceTree = "<group>"; };
+		047A21171557B373006D24CF /* 23-Yellow-rumpedWarbler.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "23-Yellow-rumpedWarbler.txt"; sourceTree = "<group>"; };
+		047A21181557B373006D24CF /* 24-Orange-crownedWarbler-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "24-Orange-crownedWarbler-image.jpg"; sourceTree = "<group>"; };
+		047A21191557B373006D24CF /* 24-Orange-crownedWarbler-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "24-Orange-crownedWarbler-image_tn.jpg"; sourceTree = "<group>"; };
+		047A211A1557B373006D24CF /* 24-Orange-crownedWarbler-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "24-Orange-crownedWarbler-long.mp3"; sourceTree = "<group>"; };
+		047A211B1557B373006D24CF /* 24-Orange-crownedWarbler.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "24-Orange-crownedWarbler.txt"; sourceTree = "<group>"; };
+		047A211C1557B373006D24CF /* 25-CommonYellowthroat-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "25-CommonYellowthroat-image.jpg"; sourceTree = "<group>"; };
+		047A211D1557B373006D24CF /* 25-CommonYellowthroat-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "25-CommonYellowthroat-image_tn.jpg"; sourceTree = "<group>"; };
+		047A211E1557B373006D24CF /* 25-CommonYellowthroat-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "25-CommonYellowthroat-long.wav"; sourceTree = "<group>"; };
+		047A211F1557B373006D24CF /* 25-CommonYellowthroat-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "25-CommonYellowthroat-short.wav"; sourceTree = "<group>"; };
+		047A21201557B373006D24CF /* 25-CommonYellowthroat.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "25-CommonYellowthroat.txt"; sourceTree = "<group>"; };
+		047A21211557B373006D24CF /* 26-PineWarbler-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "26-PineWarbler-image.jpg"; sourceTree = "<group>"; };
+		047A21221557B373006D24CF /* 26-PineWarbler-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "26-PineWarbler-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21231557B373006D24CF /* 26-PineWarbler-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "26-PineWarbler-long.wav"; sourceTree = "<group>"; };
+		047A21241557B373006D24CF /* 26-PineWarbler-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "26-PineWarbler-short.wav"; sourceTree = "<group>"; };
+		047A21251557B373006D24CF /* 26-PineWarbler.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "26-PineWarbler.txt"; sourceTree = "<group>"; };
+		047A21261557B373006D24CF /* 27-NorthernCardinal-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "27-NorthernCardinal-image.jpg"; sourceTree = "<group>"; };
+		047A21271557B373006D24CF /* 27-NorthernCardinal-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "27-NorthernCardinal-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21281557B373006D24CF /* 27-NorthernCardinal-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "27-NorthernCardinal-long.wav"; sourceTree = "<group>"; };
+		047A21291557B373006D24CF /* 27-NorthernCardinal-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "27-NorthernCardinal-short.wav"; sourceTree = "<group>"; };
+		047A212A1557B373006D24CF /* 27-NorthernCardinal.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "27-NorthernCardinal.txt"; sourceTree = "<group>"; };
+		047A212B1557B373006D24CF /* 28-White-throatedSparrow-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "28-White-throatedSparrow-image.jpg"; sourceTree = "<group>"; };
+		047A212C1557B373006D24CF /* 28-White-throatedSparrow-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "28-White-throatedSparrow-image_tn.jpg"; sourceTree = "<group>"; };
+		047A212D1557B373006D24CF /* 28-White-throatedSparrow-long.mp3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "28-White-throatedSparrow-long.mp3.mp3"; sourceTree = "<group>"; };
+		047A212E1557B373006D24CF /* 28-White-throatedSparrow.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "28-White-throatedSparrow.txt"; sourceTree = "<group>"; };
+		047A212F1557B373006D24CF /* 29-Blue-grayGnatcatcher-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "29-Blue-grayGnatcatcher-image.jpg"; sourceTree = "<group>"; };
+		047A21301557B373006D24CF /* 29-Blue-grayGnatcatcher-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "29-Blue-grayGnatcatcher-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21311557B373006D24CF /* 29-Blue-grayGnatcatcher-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "29-Blue-grayGnatcatcher-long.wav"; sourceTree = "<group>"; };
+		047A21321557B373006D24CF /* 29-Blue-grayGnatcatcher-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "29-Blue-grayGnatcatcher-short.wav"; sourceTree = "<group>"; };
+		047A21331557B373006D24CF /* 29-Blue-grayGnatcatcher.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "29-Blue-grayGnatcatcher.txt"; sourceTree = "<group>"; };
+		047A21341557B373006D24CF /* 3-MourningDove-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-MourningDove-image.jpg"; sourceTree = "<group>"; };
+		047A21351557B373006D24CF /* 3-MourningDove-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "3-MourningDove-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21361557B373006D24CF /* 3-MourningDove-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "3-MourningDove-long.wav"; sourceTree = "<group>"; };
+		047A21371557B373006D24CF /* 3-MourningDove-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "3-MourningDove-short.wav"; sourceTree = "<group>"; };
+		047A21381557B373006D24CF /* 3-MourningDove.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "3-MourningDove.txt"; sourceTree = "<group>"; };
+		047A21391557B373006D24CF /* 30-AmericanGoldfinch-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "30-AmericanGoldfinch-image.jpg"; sourceTree = "<group>"; };
+		047A213A1557B373006D24CF /* 30-AmericanGoldfinch-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "30-AmericanGoldfinch-image_tn.jpg"; sourceTree = "<group>"; };
+		047A213B1557B373006D24CF /* 30-AmericanGoldfinch-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "30-AmericanGoldfinch-long.mp3"; sourceTree = "<group>"; };
+		047A213C1557B373006D24CF /* 30-AmericanGoldfinch.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "30-AmericanGoldfinch.txt"; sourceTree = "<group>"; };
+		047A213D1557B373006D24CF /* 31-coopershawk-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "31-coopershawk-image.jpg"; sourceTree = "<group>"; };
+		047A213E1557B373006D24CF /* 31-coopershawk-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "31-coopershawk-image_tn.jpg"; sourceTree = "<group>"; };
+		047A213F1557B373006D24CF /* 31-CoopersHawk-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "31-CoopersHawk-long.mp3"; sourceTree = "<group>"; };
+		047A21401557B373006D24CF /* 31-coopershawk.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "31-coopershawk.txt"; sourceTree = "<group>"; };
+		047A21411557B373006D24CF /* 32-White-wingedDove-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "32-White-wingedDove-image.jpg"; sourceTree = "<group>"; };
+		047A21421557B373006D24CF /* 32-White-wingedDove-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "32-White-wingedDove-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21431557B373006D24CF /* 32-White-wingedDove-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "32-White-wingedDove-long.mp3"; sourceTree = "<group>"; };
+		047A21441557B373006D24CF /* 32-White-wingedDove.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "32-White-wingedDove.txt"; sourceTree = "<group>"; };
+		047A21451557B373006D24CF /* 33-Ruby-throatedHummingbird-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "33-Ruby-throatedHummingbird-image.jpg"; sourceTree = "<group>"; };
+		047A21461557B373006D24CF /* 33-Ruby-throatedHummingbird-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "33-Ruby-throatedHummingbird-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21471557B373006D24CF /* 33-Ruby-throatedHummingbird-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "33-Ruby-throatedHummingbird-long.mp3"; sourceTree = "<group>"; };
+		047A21481557B373006D24CF /* 33-Ruby-throatedHummingbird.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "33-Ruby-throatedHummingbird.txt"; sourceTree = "<group>"; };
+		047A21491557B373006D24CF /* 34-GreatHornedOwl-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "34-GreatHornedOwl-image.jpg"; sourceTree = "<group>"; };
+		047A214A1557B373006D24CF /* 34-GreatHornedOwl-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "34-GreatHornedOwl-image_tn.jpg"; sourceTree = "<group>"; };
+		047A214B1557B373006D24CF /* 34-GreatHornedOwl-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "34-GreatHornedOwl-long.wav"; sourceTree = "<group>"; };
+		047A214C1557B373006D24CF /* 34-GreatHornedOwl-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "34-GreatHornedOwl-short.wav"; sourceTree = "<group>"; };
+		047A214D1557B373006D24CF /* 34-GreatHornedOwl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "34-GreatHornedOwl.txt"; sourceTree = "<group>"; };
+		047A214E1557B373006D24CF /* 35-Yellow-belliedSapsucker-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "35-Yellow-belliedSapsucker-image.jpg"; sourceTree = "<group>"; };
+		047A214F1557B373006D24CF /* 35-Yellow-belliedSapsucker-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "35-Yellow-belliedSapsucker-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21501557B373006D24CF /* 35-Yellow-belliedSapsucker-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "35-Yellow-belliedSapsucker-long.mp3"; sourceTree = "<group>"; };
+		047A21511557B373006D24CF /* 35-Yellow-belliedSapsucker.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "35-Yellow-belliedSapsucker.txt"; sourceTree = "<group>"; };
+		047A21521557B373006D24CF /* 36-EasternPhoebe-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "36-EasternPhoebe-image.jpg"; sourceTree = "<group>"; };
+		047A21531557B373006D24CF /* 36-EasternPhoebe-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "36-EasternPhoebe-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21541557B373006D24CF /* 36-EasternPhoebe-long.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "36-EasternPhoebe-long.mp3"; sourceTree = "<group>"; };
+		047A21551557B373006D24CF /* 36-EasternPhoebe.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "36-EasternPhoebe.txt"; sourceTree = "<group>"; };
+		047A21561557B373006D24CF /* 4-EasternScreech-Owl-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4-EasternScreech-Owl-image.jpg"; sourceTree = "<group>"; };
+		047A21571557B373006D24CF /* 4-EasternScreech-Owl-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "4-EasternScreech-Owl-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21581557B373006D24CF /* 4-EasternScreech-Owl-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "4-EasternScreech-Owl-long.wav"; sourceTree = "<group>"; };
+		047A21591557B373006D24CF /* 4-EasternScreech-Owl-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "4-EasternScreech-Owl-short.wav"; sourceTree = "<group>"; };
+		047A215A1557B373006D24CF /* 4-EasternScreech-Owl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "4-EasternScreech-Owl.txt"; sourceTree = "<group>"; };
+		047A215B1557B373006D24CF /* 5-DownyWoodpecker-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5-DownyWoodpecker-image.jpg"; sourceTree = "<group>"; };
+		047A215C1557B373006D24CF /* 5-DownyWoodpecker-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "5-DownyWoodpecker-image_tn.jpg"; sourceTree = "<group>"; };
+		047A215D1557B373006D24CF /* 5-DownyWoodpecker-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "5-DownyWoodpecker-short.wav"; sourceTree = "<group>"; };
+		047A215E1557B373006D24CF /* 5-DownyWoodpecker.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "5-DownyWoodpecker.txt"; sourceTree = "<group>"; };
+		047A215F1557B373006D24CF /* 6-Red-belliedWoodpecker-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6-Red-belliedWoodpecker-image.jpg"; sourceTree = "<group>"; };
+		047A21601557B373006D24CF /* 6-Red-belliedWoodpecker-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "6-Red-belliedWoodpecker-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21611557B373006D24CF /* 6-Red-belliedWoodpecker-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "6-Red-belliedWoodpecker-long.wav"; sourceTree = "<group>"; };
+		047A21621557B373006D24CF /* 6-Red-belliedWoodpecker-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "6-Red-belliedWoodpecker-short.wav"; sourceTree = "<group>"; };
+		047A21631557B373006D24CF /* 6-Red-belliedWoodpecker.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "6-Red-belliedWoodpecker.txt"; sourceTree = "<group>"; };
+		047A21641557B373006D24CF /* 7-BlueJay-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7-BlueJay-image.jpg"; sourceTree = "<group>"; };
+		047A21651557B373006D24CF /* 7-BlueJay-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "7-BlueJay-image_tn.jpg"; sourceTree = "<group>"; };
+		047A21661557B373006D24CF /* 7-BlueJay-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "7-BlueJay-long.wav"; sourceTree = "<group>"; };
+		047A21671557B373006D24CF /* 7-BlueJay-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "7-BlueJay-short.wav"; sourceTree = "<group>"; };
+		047A21681557B373006D24CF /* 7-BlueJay.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "7-BlueJay.txt"; sourceTree = "<group>"; };
+		047A21691557B373006D24CF /* 8-PileatedWoodpecker-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "8-PileatedWoodpecker-image.jpg"; sourceTree = "<group>"; };
+		047A216A1557B373006D24CF /* 8-PileatedWoodpecker-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "8-PileatedWoodpecker-image_tn.jpg"; sourceTree = "<group>"; };
+		047A216B1557B373006D24CF /* 8-PileatedWoodpecker-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "8-PileatedWoodpecker-short.wav"; sourceTree = "<group>"; };
+		047A216C1557B373006D24CF /* 8-PileatedWoodpecker.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "8-PileatedWoodpecker.txt"; sourceTree = "<group>"; };
+		047A216D1557B373006D24CF /* 9-White-eyedVireo-image.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9-White-eyedVireo-image.jpg"; sourceTree = "<group>"; };
+		047A216E1557B373006D24CF /* 9-White-eyedVireo-image_tn.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "9-White-eyedVireo-image_tn.jpg"; sourceTree = "<group>"; };
+		047A216F1557B373006D24CF /* 9-White-eyedVireo-long.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "9-White-eyedVireo-long.wav"; sourceTree = "<group>"; };
+		047A21701557B373006D24CF /* 9-White-eyedVireo-short.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "9-White-eyedVireo-short.wav"; sourceTree = "<group>"; };
+		047A21711557B373006D24CF /* 9-White-eyedVireo.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "9-White-eyedVireo.txt"; sourceTree = "<group>"; };
+		047A21721557B373006D24CF /* about_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about_icon.png; sourceTree = "<group>"; };
+		047A21731557B373006D24CF /* arboretum_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arboretum_logo.png; sourceTree = "<group>"; };
+		047A21741557B373006D24CF /* arrow_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_button_pressed.png; sourceTree = "<group>"; };
+		047A21751557B373006D24CF /* arrow_button_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrow_button_unpressed.png; sourceTree = "<group>"; };
+		047A21761557B373006D24CF /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		047A21771557B373006D24CF /* bird_watch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bird_watch.png; sourceTree = "<group>"; };
+		047A21781557B373006D24CF /* category_plank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_plank.png; sourceTree = "<group>"; };
+		047A21791557B373006D24CF /* category_plank_new.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = category_plank_new.png; sourceTree = "<group>"; };
+		047A217A1557B373006D24CF /* descr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = descr.png; sourceTree = "<group>"; };
+		047A217B1557B373006D24CF /* description_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = description_icon.png; sourceTree = "<group>"; };
+		047A217C1557B373006D24CF /* down_arrow_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_arrow_pressed.png; sourceTree = "<group>"; };
+		047A217D1557B373006D24CF /* down_arrow_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down_arrow_unpressed.png; sourceTree = "<group>"; };
+		047A217E1557B373006D24CF /* end_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = end_button_pressed.png; sourceTree = "<group>"; };
+		047A217F1557B373006D24CF /* end_button_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = end_button_unpressed.png; sourceTree = "<group>"; };
+		047A21801557B373006D24CF /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		047A21811557B373006D24CF /* icon_quiz_inactive.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_quiz_inactive.png; sourceTree = "<group>"; };
+		047A21821557B373006D24CF /* list_of_birds_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_of_birds_icon.png; sourceTree = "<group>"; };
+		047A21831557B373006D24CF /* list_picture_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_picture_border.png; sourceTree = "<group>"; };
+		047A21841557B373006D24CF /* list_plank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = list_plank.png; sourceTree = "<group>"; };
+		047A21851557B373006D24CF /* main_button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = main_button.jpg; sourceTree = "<group>"; };
+		047A21861557B373006D24CF /* main_menu_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu_background.png; sourceTree = "<group>"; };
+		047A21871557B373006D24CF /* main_menu_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu_logo.png; sourceTree = "<group>"; };
+		047A21881557B373006D24CF /* menu_background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = menu_background.jpg; sourceTree = "<group>"; };
+		047A21891557B373006D24CF /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music.png; sourceTree = "<group>"; };
+		047A218A1557B373006D24CF /* music_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = music_icon.png; sourceTree = "<group>"; };
+		047A218B1557B373006D24CF /* ok_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok_button_pressed.png; sourceTree = "<group>"; };
+		047A218C1557B373006D24CF /* ok_button_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ok_button_unpressed.png; sourceTree = "<group>"; };
+		047A218D1557B373006D24CF /* play_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button_pressed.png; sourceTree = "<group>"; };
+		047A218E1557B373006D24CF /* play_button_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_button_unpressed.png; sourceTree = "<group>"; };
+		047A218F1557B373006D24CF /* resuts_overview_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resuts_overview_background.png; sourceTree = "<group>"; };
+		047A21901557B373006D24CF /* sight.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sight.png; sourceTree = "<group>"; };
+		047A21911557B373006D24CF /* speaker_normal.9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = speaker_normal.9.png; sourceTree = "<group>"; };
+		047A21921557B373006D24CF /* start_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_button_pressed.png; sourceTree = "<group>"; };
+		047A21931557B373006D24CF /* start_button_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = start_button_unpressed.png; sourceTree = "<group>"; };
+		047A21941557B373006D24CF /* textbox_for_long_description.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textbox_for_long_description.png; sourceTree = "<group>"; };
+		047A21951557B373006D24CF /* textxbox_for_sounds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textxbox_for_sounds.png; sourceTree = "<group>"; };
+		047A21961557B373006D24CF /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = Thumbs.db; sourceTree = "<group>"; };
+		047A21971557B373006D24CF /* top_bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = top_bar.png; sourceTree = "<group>"; };
+		047A21981557B373006D24CF /* trainer_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trainer_icon.png; sourceTree = "<group>"; };
+		047A21991557B373006D24CF /* trainer_playback_controls_background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trainer_playback_controls_background.png; sourceTree = "<group>"; };
+		047A219A1557B373006D24CF /* up_arrow_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow_pressed.png; sourceTree = "<group>"; };
+		047A219B1557B373006D24CF /* up_arrow_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up_arrow_unpressed.png; sourceTree = "<group>"; };
+		047A219C1557B373006D24CF /* zoom.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom.png; sourceTree = "<group>"; };
+		047A219D1557B373006D24CF /* zoom_in_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom_in_button_pressed.png; sourceTree = "<group>"; };
+		047A219E1557B373006D24CF /* zoom_in_button_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom_in_button_unpressed.png; sourceTree = "<group>"; };
+		047A219F1557B373006D24CF /* zoom_out_button_pressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom_out_button_pressed.png; sourceTree = "<group>"; };
+		047A21A01557B373006D24CF /* zoom_out_button_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zoom_out_button_unpressed.png; sourceTree = "<group>"; };
+		047A21A11557B373006D24CF /* rewind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rewind.png; path = ../rewind.png; sourceTree = "<group>"; };
+		047A21A21557B373006D24CF /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		047A21A31557B373006D24CF /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		047A21A41557B373006D24CF /* SwitcherCellVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwitcherCellVC.h; sourceTree = "<group>"; };
+		047A21A51557B373006D24CF /* SwitcherCellVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SwitcherCellVC.m; sourceTree = "<group>"; };
+		047A21A61557B373006D24CF /* SwitcherCellVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SwitcherCellVC.xib; sourceTree = "<group>"; };
+		047A21A71557B373006D24CF /* win.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = win.wav; path = ../win.wav; sourceTree = "<group>"; };
+		047A22A11557B3B5006D24CF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		047A22A31557B3FA006D24CF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		047A22A51557B414006D24CF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		047A22AC1557B500006D24CF /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		047A22BF1557E17E006D24CF /* BirdAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BirdAnnotation.h; sourceTree = "<group>"; };
+		047A22C01557E17E006D24CF /* BirdAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdAnnotation.m; sourceTree = "<group>"; };
+		047A22C21557E27E006D24CF /* trainer_start_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trainer_start_icon.png; sourceTree = "<group>"; };
+		047A22C41557E292006D24CF /* main_menu_button_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu_button_unpressed.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		047A206B1557B31F006D24CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047A22AD1557B500006D24CF /* MapKit.framework in Frameworks */,
+				047A22A61557B414006D24CF /* AVFoundation.framework in Frameworks */,
+				047A22A41557B3FA006D24CF /* AudioToolbox.framework in Frameworks */,
+				047A22A21557B3B5006D24CF /* libsqlite3.dylib in Frameworks */,
+				047A20731557B31F006D24CF /* UIKit.framework in Frameworks */,
+				047A20751557B31F006D24CF /* Foundation.framework in Frameworks */,
+				047A20771557B31F006D24CF /* CoreGraphics.framework in Frameworks */,
+				047A21BB1557B373006D24CF /* libfacebook_ios_sdk.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		047A20631557B31F006D24CF = {
+			isa = PBXGroup;
+			children = (
+				047A20781557B31F006D24CF /* birds */,
+				047A20711557B31F006D24CF /* Frameworks */,
+				047A206F1557B31F006D24CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		047A206F1557B31F006D24CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047A206E1557B31F006D24CF /* birds.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		047A20711557B31F006D24CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				047A20A81557B373006D24CF /* facebook-ios-sdk */,
+				047A22AC1557B500006D24CF /* MapKit.framework */,
+				047A22A51557B414006D24CF /* AVFoundation.framework */,
+				047A22A31557B3FA006D24CF /* AudioToolbox.framework */,
+				047A22A11557B3B5006D24CF /* libsqlite3.dylib */,
+				047A20721557B31F006D24CF /* UIKit.framework */,
+				047A20741557B31F006D24CF /* Foundation.framework */,
+				047A20761557B31F006D24CF /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		047A20781557B31F006D24CF /* birds */ = {
+			isa = PBXGroup;
+			children = (
+				047A22B41557B576006D24CF /* Common */,
+				047A22A81557B4A1006D24CF /* AlphabetViewController */,
+				047A22A71557B496006D24CF /* AboutViewController */,
+				047A22B11557B545006D24CF /* Model */,
+				047A22B21557B54E006D24CF /* BirdCell */,
+				047A22B31557B55B006D24CF /* DescriptionVC */,
+				047A22B01557B52E006D24CF /* DetailTabController */,
+				047A22AF1557B526006D24CF /* GameVC */,
+				047A22AE1557B511006D24CF /* GameOptionsVC */,
+				047A22AB1557B4EF006D24CF /* MapViewController */,
+				047A22AA1557B4E7006D24CF /* MusicVC */,
+				047A22D31557F0D5006D24CF /* RootVC */,
+				047A22A91557B4CB006D24CF /* SwitcherCellVC */,
+				047A22D41557F108006D24CF /* birdsAppDelegate */,
+				047A20791557B31F006D24CF /* Supporting Files */,
+				047A20CF1557B373006D24CF /* Resources */,
+			);
+			path = birds;
+			sourceTree = "<group>";
+		};
+		047A20791557B31F006D24CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				047A20C41557B373006D24CF /* main.m */,
+				047A20961557B373006D24CF /* birds-Info.plist */,
+				047A20971557B373006D24CF /* birds-Prefix.pch */,
+				047A20901557B373006D24CF /* bidrs.sql */,
+				047A20A11557B373006D24CF /* en.lproj */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		047A20A11557B373006D24CF /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				047A20A21557B373006D24CF /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		047A20A81557B373006D24CF /* facebook-ios-sdk */ = {
+			isa = PBXGroup;
+			children = (
+				047A20A91557B373006D24CF /* Facebook.h */,
+				047A20AA1557B373006D24CF /* FBConnect.h */,
+				047A20AB1557B373006D24CF /* FBDialog.bundle */,
+				047A20AC1557B373006D24CF /* FBDialog.h */,
+				047A20AD1557B373006D24CF /* FBFrictionlessRequestSettings.h */,
+				047A20AE1557B373006D24CF /* FBLoginDialog.h */,
+				047A20AF1557B373006D24CF /* FBRequest.h */,
+				047A20B01557B373006D24CF /* JSON.h */,
+				047A20B11557B373006D24CF /* libfacebook_ios_sdk.a */,
+				047A20B21557B373006D24CF /* NSObject+SBJSON.h */,
+				047A20B31557B373006D24CF /* NSString+SBJSON.h */,
+				047A20B41557B373006D24CF /* SBJSON.h */,
+				047A20B51557B373006D24CF /* SBJsonBase.h */,
+				047A20B61557B373006D24CF /* SBJsonParser.h */,
+				047A20B71557B373006D24CF /* SBJsonWriter.h */,
+			);
+			name = "facebook-ios-sdk";
+			path = "birds/facebook-ios-sdk";
+			sourceTree = "<group>";
+		};
+		047A20CF1557B373006D24CF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				047A22C41557E292006D24CF /* main_menu_button_unpressed.png */,
+				047A22C21557E27E006D24CF /* trainer_start_icon.png */,
+				047A21A71557B373006D24CF /* win.wav */,
+				047A20B81557B373006D24CF /* forward.png */,
+				047A20CD1557B373006D24CF /* pause.png */,
+				047A20CE1557B373006D24CF /* play.png */,
+				047A21A11557B373006D24CF /* rewind.png */,
+				047A20D01557B373006D24CF /* 1-greenheron-image.jpg */,
+				047A20D11557B373006D24CF /* 1-greenheron-image_tn.jpg */,
+				047A20D21557B373006D24CF /* 1-GreenHeron-short.wav */,
+				047A20D31557B373006D24CF /* 1-greenheron.txt */,
+				047A20D41557B373006D24CF /* 10-BarredOwl-image.jpg */,
+				047A20D51557B373006D24CF /* 10-BarredOwl-image_tn.jpg */,
+				047A20D61557B373006D24CF /* 10-BarredOwl-long.wav */,
+				047A20D71557B373006D24CF /* 10-BarredOwl-short.wav */,
+				047A20D81557B373006D24CF /* 10-BarredOwl.txt */,
+				047A20D91557B373006D24CF /* 11-AmericanCrow-long.wav */,
+				047A20DA1557B373006D24CF /* 11-AmericanCrow-short.wav */,
+				047A20DB1557B373006D24CF /* 11-americancrow.jpg */,
+				047A20DC1557B373006D24CF /* 11-americancrow.txt */,
+				047A20DD1557B373006D24CF /* 11-americancrow_tn.jpg */,
+				047A20DE1557B373006D24CF /* 12-black-crowned night-heron-image.jpg */,
+				047A20DF1557B373006D24CF /* 12-black-crowned night-heron-image_tn.jpg */,
+				047A20E01557B373006D24CF /* 12-black-crowned night-heron.txt */,
+				047A20E11557B373006D24CF /* 12-Black-crownedNight-Heron-long.mp4 */,
+				047A20E21557B373006D24CF /* 13-Yellow-crowned Night-Heron-long.mp3 */,
+				047A20E31557B373006D24CF /* 13-yellow-crowned-night-heron.jpg */,
+				047A20E41557B373006D24CF /* 13-yellow-crowned-night-heron.txt */,
+				047A20E51557B373006D24CF /* 13-yellow-crowned-night-heron_tn.jpg */,
+				047A20E61557B373006D24CF /* 14-CarolinaChickadee-image.jpg */,
+				047A20E71557B373006D24CF /* 14-CarolinaChickadee-image_tn.jpg */,
+				047A20E81557B373006D24CF /* 14-CarolinaChickadee-long.wav */,
+				047A20E91557B373006D24CF /* 14-CarolinaChickadee-short.wav */,
+				047A20EA1557B373006D24CF /* 14-CarolinaChickadee.txt */,
+				047A20EB1557B373006D24CF /* 15-TuftedTitmouse-image.jpg */,
+				047A20EC1557B373006D24CF /* 15-TuftedTitmouse-image_tn.jpg */,
+				047A20ED1557B373006D24CF /* 15-TuftedTitmouse-long.wav */,
+				047A20EE1557B373006D24CF /* 15-TuftedTitmouse-short.wav */,
+				047A20EF1557B373006D24CF /* 15-TuftedTitmouse.txt */,
+				047A20F01557B373006D24CF /* 16-CarolinaWren-image.jpg */,
+				047A20F11557B373006D24CF /* 16-CarolinaWren-image_tn.jpg */,
+				047A20F21557B373006D24CF /* 16-CarolinaWren-long.wav */,
+				047A20F31557B373006D24CF /* 16-CarolinaWren-short.wav */,
+				047A20F41557B373006D24CF /* 16-CarolinaWren.txt */,
+				047A20F51557B373006D24CF /* 17-WinterWren-image.jpg */,
+				047A20F61557B373006D24CF /* 17-WinterWren-image_tn.jpg */,
+				047A20F71557B373006D24CF /* 17-WinterWren-long.mp3 */,
+				047A20F81557B373006D24CF /* 17-WinterWren.txt */,
+				047A20F91557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image.jpg */,
+				047A20FA1557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image_tn.jpg */,
+				047A20FB1557B373006D24CF /* 18-Ruby-crowned-Kinglet-long.mp3 */,
+				047A20FC1557B373006D24CF /* 18-Ruby-Crowned-Kinglet.txt */,
+				047A20FD1557B373006D24CF /* 19-HermitThrush-image.jpg */,
+				047A20FE1557B373006D24CF /* 19-HermitThrush-image_tn.jpg */,
+				047A20FF1557B373006D24CF /* 19-HermitThrush-long.mp3 */,
+				047A21001557B373006D24CF /* 19-HermitThrush.txt */,
+				047A21011557B373006D24CF /* 2-Red-shouldered Hawk-long.wav */,
+				047A21021557B373006D24CF /* 2-Red-shouldered Hawk-short.wav */,
+				047A21031557B373006D24CF /* 2-Red-shouldered Hawk.txt */,
+				047A21041557B373006D24CF /* 2-redshoulderedhawk-image.jpg */,
+				047A21051557B373006D24CF /* 2-redshoulderedhawk-image_tn.jpg */,
+				047A21061557B373006D24CF /* 20-AmericanRobin-image.jpg */,
+				047A21071557B373006D24CF /* 20-AmericanRobin-image_tn.jpg */,
+				047A21081557B373006D24CF /* 20-AmericanRobin-long.wav */,
+				047A21091557B373006D24CF /* 20-AmericanRobin-short.wav */,
+				047A210A1557B373006D24CF /* 20-AmericanRobin.txt */,
+				047A210B1557B373006D24CF /* 21-NorthernMockingbird-image.jpg */,
+				047A210C1557B373006D24CF /* 21-NorthernMockingbird-image_tn.jpg */,
+				047A210D1557B373006D24CF /* 21-NorthernMockingbird-long.wav */,
+				047A210E1557B373006D24CF /* 21-NorthernMockingbird-short.wav */,
+				047A210F1557B373006D24CF /* 21-NorthernMockingbird.txt */,
+				047A21101557B373006D24CF /* 22-CedarWaxwing-image.jpg */,
+				047A21111557B373006D24CF /* 22-CedarWaxwing-image_tn.jpg */,
+				047A21121557B373006D24CF /* 22-CedarWaxwing-long.mp3 */,
+				047A21131557B373006D24CF /* 22-CedarWaxwing.txt */,
+				047A21141557B373006D24CF /* 23-Yellow-rumpedWarbler-image.jpg */,
+				047A21151557B373006D24CF /* 23-Yellow-rumpedWarbler-image_tn.jpg */,
+				047A21161557B373006D24CF /* 23-Yellow-rumpedWarbler-long.mp3 */,
+				047A21171557B373006D24CF /* 23-Yellow-rumpedWarbler.txt */,
+				047A21181557B373006D24CF /* 24-Orange-crownedWarbler-image.jpg */,
+				047A21191557B373006D24CF /* 24-Orange-crownedWarbler-image_tn.jpg */,
+				047A211A1557B373006D24CF /* 24-Orange-crownedWarbler-long.mp3 */,
+				047A211B1557B373006D24CF /* 24-Orange-crownedWarbler.txt */,
+				047A211C1557B373006D24CF /* 25-CommonYellowthroat-image.jpg */,
+				047A211D1557B373006D24CF /* 25-CommonYellowthroat-image_tn.jpg */,
+				047A211E1557B373006D24CF /* 25-CommonYellowthroat-long.wav */,
+				047A211F1557B373006D24CF /* 25-CommonYellowthroat-short.wav */,
+				047A21201557B373006D24CF /* 25-CommonYellowthroat.txt */,
+				047A21211557B373006D24CF /* 26-PineWarbler-image.jpg */,
+				047A21221557B373006D24CF /* 26-PineWarbler-image_tn.jpg */,
+				047A21231557B373006D24CF /* 26-PineWarbler-long.wav */,
+				047A21241557B373006D24CF /* 26-PineWarbler-short.wav */,
+				047A21251557B373006D24CF /* 26-PineWarbler.txt */,
+				047A21261557B373006D24CF /* 27-NorthernCardinal-image.jpg */,
+				047A21271557B373006D24CF /* 27-NorthernCardinal-image_tn.jpg */,
+				047A21281557B373006D24CF /* 27-NorthernCardinal-long.wav */,
+				047A21291557B373006D24CF /* 27-NorthernCardinal-short.wav */,
+				047A212A1557B373006D24CF /* 27-NorthernCardinal.txt */,
+				047A212B1557B373006D24CF /* 28-White-throatedSparrow-image.jpg */,
+				047A212C1557B373006D24CF /* 28-White-throatedSparrow-image_tn.jpg */,
+				047A212D1557B373006D24CF /* 28-White-throatedSparrow-long.mp3.mp3 */,
+				047A212E1557B373006D24CF /* 28-White-throatedSparrow.txt */,
+				047A212F1557B373006D24CF /* 29-Blue-grayGnatcatcher-image.jpg */,
+				047A21301557B373006D24CF /* 29-Blue-grayGnatcatcher-image_tn.jpg */,
+				047A21311557B373006D24CF /* 29-Blue-grayGnatcatcher-long.wav */,
+				047A21321557B373006D24CF /* 29-Blue-grayGnatcatcher-short.wav */,
+				047A21331557B373006D24CF /* 29-Blue-grayGnatcatcher.txt */,
+				047A21341557B373006D24CF /* 3-MourningDove-image.jpg */,
+				047A21351557B373006D24CF /* 3-MourningDove-image_tn.jpg */,
+				047A21361557B373006D24CF /* 3-MourningDove-long.wav */,
+				047A21371557B373006D24CF /* 3-MourningDove-short.wav */,
+				047A21381557B373006D24CF /* 3-MourningDove.txt */,
+				047A21391557B373006D24CF /* 30-AmericanGoldfinch-image.jpg */,
+				047A213A1557B373006D24CF /* 30-AmericanGoldfinch-image_tn.jpg */,
+				047A213B1557B373006D24CF /* 30-AmericanGoldfinch-long.mp3 */,
+				047A213C1557B373006D24CF /* 30-AmericanGoldfinch.txt */,
+				047A213D1557B373006D24CF /* 31-coopershawk-image.jpg */,
+				047A213E1557B373006D24CF /* 31-coopershawk-image_tn.jpg */,
+				047A213F1557B373006D24CF /* 31-CoopersHawk-long.mp3 */,
+				047A21401557B373006D24CF /* 31-coopershawk.txt */,
+				047A21411557B373006D24CF /* 32-White-wingedDove-image.jpg */,
+				047A21421557B373006D24CF /* 32-White-wingedDove-image_tn.jpg */,
+				047A21431557B373006D24CF /* 32-White-wingedDove-long.mp3 */,
+				047A21441557B373006D24CF /* 32-White-wingedDove.txt */,
+				047A21451557B373006D24CF /* 33-Ruby-throatedHummingbird-image.jpg */,
+				047A21461557B373006D24CF /* 33-Ruby-throatedHummingbird-image_tn.jpg */,
+				047A21471557B373006D24CF /* 33-Ruby-throatedHummingbird-long.mp3 */,
+				047A21481557B373006D24CF /* 33-Ruby-throatedHummingbird.txt */,
+				047A21491557B373006D24CF /* 34-GreatHornedOwl-image.jpg */,
+				047A214A1557B373006D24CF /* 34-GreatHornedOwl-image_tn.jpg */,
+				047A214B1557B373006D24CF /* 34-GreatHornedOwl-long.wav */,
+				047A214C1557B373006D24CF /* 34-GreatHornedOwl-short.wav */,
+				047A214D1557B373006D24CF /* 34-GreatHornedOwl.txt */,
+				047A214E1557B373006D24CF /* 35-Yellow-belliedSapsucker-image.jpg */,
+				047A214F1557B373006D24CF /* 35-Yellow-belliedSapsucker-image_tn.jpg */,
+				047A21501557B373006D24CF /* 35-Yellow-belliedSapsucker-long.mp3 */,
+				047A21511557B373006D24CF /* 35-Yellow-belliedSapsucker.txt */,
+				047A21521557B373006D24CF /* 36-EasternPhoebe-image.jpg */,
+				047A21531557B373006D24CF /* 36-EasternPhoebe-image_tn.jpg */,
+				047A21541557B373006D24CF /* 36-EasternPhoebe-long.mp3 */,
+				047A21551557B373006D24CF /* 36-EasternPhoebe.txt */,
+				047A21561557B373006D24CF /* 4-EasternScreech-Owl-image.jpg */,
+				047A21571557B373006D24CF /* 4-EasternScreech-Owl-image_tn.jpg */,
+				047A21581557B373006D24CF /* 4-EasternScreech-Owl-long.wav */,
+				047A21591557B373006D24CF /* 4-EasternScreech-Owl-short.wav */,
+				047A215A1557B373006D24CF /* 4-EasternScreech-Owl.txt */,
+				047A215B1557B373006D24CF /* 5-DownyWoodpecker-image.jpg */,
+				047A215C1557B373006D24CF /* 5-DownyWoodpecker-image_tn.jpg */,
+				047A215D1557B373006D24CF /* 5-DownyWoodpecker-short.wav */,
+				047A215E1557B373006D24CF /* 5-DownyWoodpecker.txt */,
+				047A215F1557B373006D24CF /* 6-Red-belliedWoodpecker-image.jpg */,
+				047A21601557B373006D24CF /* 6-Red-belliedWoodpecker-image_tn.jpg */,
+				047A21611557B373006D24CF /* 6-Red-belliedWoodpecker-long.wav */,
+				047A21621557B373006D24CF /* 6-Red-belliedWoodpecker-short.wav */,
+				047A21631557B373006D24CF /* 6-Red-belliedWoodpecker.txt */,
+				047A21641557B373006D24CF /* 7-BlueJay-image.jpg */,
+				047A21651557B373006D24CF /* 7-BlueJay-image_tn.jpg */,
+				047A21661557B373006D24CF /* 7-BlueJay-long.wav */,
+				047A21671557B373006D24CF /* 7-BlueJay-short.wav */,
+				047A21681557B373006D24CF /* 7-BlueJay.txt */,
+				047A21691557B373006D24CF /* 8-PileatedWoodpecker-image.jpg */,
+				047A216A1557B373006D24CF /* 8-PileatedWoodpecker-image_tn.jpg */,
+				047A216B1557B373006D24CF /* 8-PileatedWoodpecker-short.wav */,
+				047A216C1557B373006D24CF /* 8-PileatedWoodpecker.txt */,
+				047A216D1557B373006D24CF /* 9-White-eyedVireo-image.jpg */,
+				047A216E1557B373006D24CF /* 9-White-eyedVireo-image_tn.jpg */,
+				047A216F1557B373006D24CF /* 9-White-eyedVireo-long.wav */,
+				047A21701557B373006D24CF /* 9-White-eyedVireo-short.wav */,
+				047A21711557B373006D24CF /* 9-White-eyedVireo.txt */,
+				047A21721557B373006D24CF /* about_icon.png */,
+				047A21731557B373006D24CF /* arboretum_logo.png */,
+				047A21741557B373006D24CF /* arrow_button_pressed.png */,
+				047A21751557B373006D24CF /* arrow_button_unpressed.png */,
+				047A21761557B373006D24CF /* background.png */,
+				047A21771557B373006D24CF /* bird_watch.png */,
+				047A21781557B373006D24CF /* category_plank.png */,
+				047A21791557B373006D24CF /* category_plank_new.png */,
+				047A217A1557B373006D24CF /* descr.png */,
+				047A217B1557B373006D24CF /* description_icon.png */,
+				047A217C1557B373006D24CF /* down_arrow_pressed.png */,
+				047A217D1557B373006D24CF /* down_arrow_unpressed.png */,
+				047A217E1557B373006D24CF /* end_button_pressed.png */,
+				047A217F1557B373006D24CF /* end_button_unpressed.png */,
+				047A21801557B373006D24CF /* icon.png */,
+				047A21811557B373006D24CF /* icon_quiz_inactive.png */,
+				047A21821557B373006D24CF /* list_of_birds_icon.png */,
+				047A21831557B373006D24CF /* list_picture_border.png */,
+				047A21841557B373006D24CF /* list_plank.png */,
+				047A21851557B373006D24CF /* main_button.jpg */,
+				047A21861557B373006D24CF /* main_menu_background.png */,
+				047A21871557B373006D24CF /* main_menu_logo.png */,
+				047A21881557B373006D24CF /* menu_background.jpg */,
+				047A21891557B373006D24CF /* music.png */,
+				047A218A1557B373006D24CF /* music_icon.png */,
+				047A218B1557B373006D24CF /* ok_button_pressed.png */,
+				047A218C1557B373006D24CF /* ok_button_unpressed.png */,
+				047A218D1557B373006D24CF /* play_button_pressed.png */,
+				047A218E1557B373006D24CF /* play_button_unpressed.png */,
+				047A218F1557B373006D24CF /* resuts_overview_background.png */,
+				047A21901557B373006D24CF /* sight.png */,
+				047A21911557B373006D24CF /* speaker_normal.9.png */,
+				047A21921557B373006D24CF /* start_button_pressed.png */,
+				047A21931557B373006D24CF /* start_button_unpressed.png */,
+				047A21941557B373006D24CF /* textbox_for_long_description.png */,
+				047A21951557B373006D24CF /* textxbox_for_sounds.png */,
+				047A21961557B373006D24CF /* Thumbs.db */,
+				047A21971557B373006D24CF /* top_bar.png */,
+				047A21981557B373006D24CF /* trainer_icon.png */,
+				047A21991557B373006D24CF /* trainer_playback_controls_background.png */,
+				047A219A1557B373006D24CF /* up_arrow_pressed.png */,
+				047A219B1557B373006D24CF /* up_arrow_unpressed.png */,
+				047A219C1557B373006D24CF /* zoom.png */,
+				047A219D1557B373006D24CF /* zoom_in_button_pressed.png */,
+				047A219E1557B373006D24CF /* zoom_in_button_unpressed.png */,
+				047A219F1557B373006D24CF /* zoom_out_button_pressed.png */,
+				047A21A01557B373006D24CF /* zoom_out_button_unpressed.png */,
+			);
+			name = Resources;
+			path = resources;
+			sourceTree = "<group>";
+		};
+		047A22A71557B496006D24CF /* AboutViewController */ = {
+			isa = PBXGroup;
+			children = (
+				047A20891557B373006D24CF /* AboutViewController.h */,
+				047A208A1557B373006D24CF /* AboutViewController.m */,
+				047A208B1557B373006D24CF /* AboutViewController.xib */,
+			);
+			name = AboutViewController;
+			sourceTree = "<group>";
+		};
+		047A22A81557B4A1006D24CF /* AlphabetViewController */ = {
+			isa = PBXGroup;
+			children = (
+				047A208C1557B373006D24CF /* AlphabetViewController.h */,
+				047A208D1557B373006D24CF /* AlphabetViewController.m */,
+				047A208E1557B373006D24CF /* AlphabetViewController.xib */,
+			);
+			name = AlphabetViewController;
+			sourceTree = "<group>";
+		};
+		047A22A91557B4CB006D24CF /* SwitcherCellVC */ = {
+			isa = PBXGroup;
+			children = (
+				047A21A41557B373006D24CF /* SwitcherCellVC.h */,
+				047A21A51557B373006D24CF /* SwitcherCellVC.m */,
+				047A21A61557B373006D24CF /* SwitcherCellVC.xib */,
+			);
+			name = SwitcherCellVC;
+			sourceTree = "<group>";
+		};
+		047A22AA1557B4E7006D24CF /* MusicVC */ = {
+			isa = PBXGroup;
+			children = (
+				047A20C81557B373006D24CF /* MusicVC.h */,
+				047A20C91557B373006D24CF /* MusicVC.m */,
+				047A20CA1557B373006D24CF /* MusicVC.xib */,
+			);
+			name = MusicVC;
+			sourceTree = "<group>";
+		};
+		047A22AB1557B4EF006D24CF /* MapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				047A22BD1557E14D006D24CF /* AnnotationView */,
+				047A20C51557B373006D24CF /* MapViewController.h */,
+				047A20C61557B373006D24CF /* MapViewController.m */,
+				047A20C71557B373006D24CF /* MapViewController.xib */,
+			);
+			name = MapViewController;
+			sourceTree = "<group>";
+		};
+		047A22AE1557B511006D24CF /* GameOptionsVC */ = {
+			isa = PBXGroup;
+			children = (
+				047A20B91557B373006D24CF /* GameOptions.plist */,
+				047A20BA1557B373006D24CF /* GameOptionsViewController.h */,
+				047A20BB1557B373006D24CF /* GameOptionsViewController.m */,
+				047A20BC1557B373006D24CF /* GameOptionsViewController.xib */,
+			);
+			name = GameOptionsVC;
+			sourceTree = "<group>";
+		};
+		047A22AF1557B526006D24CF /* GameVC */ = {
+			isa = PBXGroup;
+			children = (
+				047A20BD1557B373006D24CF /* GameVC.h */,
+				047A20BE1557B373006D24CF /* GameVC.m */,
+				047A20BF1557B373006D24CF /* GameVC.xib */,
+			);
+			name = GameVC;
+			sourceTree = "<group>";
+		};
+		047A22B01557B52E006D24CF /* DetailTabController */ = {
+			isa = PBXGroup;
+			children = (
+				047A209D1557B373006D24CF /* DetailTabController.h */,
+				047A209E1557B373006D24CF /* DetailTabController.m */,
+				047A209F1557B373006D24CF /* DetailTabController.xib */,
+			);
+			name = DetailTabController;
+			sourceTree = "<group>";
+		};
+		047A22B11557B545006D24CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				047A20911557B373006D24CF /* Bird.h */,
+				047A20921557B373006D24CF /* Bird.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		047A22B21557B54E006D24CF /* BirdCell */ = {
+			isa = PBXGroup;
+			children = (
+				047A20931557B373006D24CF /* BirdCell.h */,
+				047A20941557B373006D24CF /* BirdCell.m */,
+				047A20951557B373006D24CF /* BirdCell.xib */,
+			);
+			name = BirdCell;
+			sourceTree = "<group>";
+		};
+		047A22B31557B55B006D24CF /* DescriptionVC */ = {
+			isa = PBXGroup;
+			children = (
+				047A209A1557B373006D24CF /* DesciptionVC.h */,
+				047A209B1557B373006D24CF /* DesciptionVC.m */,
+				047A209C1557B373006D24CF /* DesciptionVC.xib */,
+			);
+			name = DescriptionVC;
+			sourceTree = "<group>";
+		};
+		047A22B41557B576006D24CF /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				047A20CB1557B373006D24CF /* NSMutableArray+Shuffle.h */,
+				047A20CC1557B373006D24CF /* NSMutableArray+Shuffle.m */,
+			);
+			name = Common;
+			sourceTree = "<group>";
+		};
+		047A22BD1557E14D006D24CF /* AnnotationView */ = {
+			isa = PBXGroup;
+			children = (
+				047A22BF1557E17E006D24CF /* BirdAnnotation.h */,
+				047A22C01557E17E006D24CF /* BirdAnnotation.m */,
+			);
+			name = AnnotationView;
+			sourceTree = "<group>";
+		};
+		047A22D31557F0D5006D24CF /* RootVC */ = {
+			isa = PBXGroup;
+			children = (
+				047A21A21557B373006D24CF /* RootViewController.h */,
+				047A21A31557B373006D24CF /* RootViewController.m */,
+				047A20A61557B373006D24CF /* RootViewController.xib */,
+			);
+			name = RootVC;
+			sourceTree = "<group>";
+		};
+		047A22D41557F108006D24CF /* birdsAppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				047A20981557B373006D24CF /* birdsAppDelegate.h */,
+				047A20991557B373006D24CF /* birdsAppDelegate.m */,
+				047A20A41557B373006D24CF /* MainWindow.xib */,
+			);
+			name = birdsAppDelegate;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		047A206D1557B31F006D24CF /* birds */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 047A20861557B31F006D24CF /* Build configuration list for PBXNativeTarget "birds" */;
+			buildPhases = (
+				047A206A1557B31F006D24CF /* Sources */,
+				047A206B1557B31F006D24CF /* Frameworks */,
+				047A206C1557B31F006D24CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = birds;
+			productName = birds;
+			productReference = 047A206E1557B31F006D24CF /* birds.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		047A20651557B31F006D24CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = 047A20681557B31F006D24CF /* Build configuration list for PBXProject "birds" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 047A20631557B31F006D24CF;
+			productRefGroup = 047A206F1557B31F006D24CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				047A206D1557B31F006D24CF /* birds */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		047A206C1557B31F006D24CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047A21A91557B373006D24CF /* AboutViewController.xib in Resources */,
+				047A21AB1557B373006D24CF /* AlphabetViewController.xib in Resources */,
+				047A21AD1557B373006D24CF /* bidrs.sql in Resources */,
+				047A21B01557B373006D24CF /* BirdCell.xib in Resources */,
+				047A21B11557B373006D24CF /* birds-Info.plist in Resources */,
+				047A21B41557B373006D24CF /* DesciptionVC.xib in Resources */,
+				047A21B61557B373006D24CF /* DetailTabController.xib in Resources */,
+				047A21B71557B373006D24CF /* InfoPlist.strings in Resources */,
+				047A21B81557B373006D24CF /* MainWindow.xib in Resources */,
+				047A21B91557B373006D24CF /* RootViewController.xib in Resources */,
+				047A21BA1557B373006D24CF /* FBDialog.bundle in Resources */,
+				047A21BC1557B373006D24CF /* forward.png in Resources */,
+				047A21BD1557B373006D24CF /* GameOptions.plist in Resources */,
+				047A21BF1557B373006D24CF /* GameOptionsViewController.xib in Resources */,
+				047A21C11557B373006D24CF /* GameVC.xib in Resources */,
+				047A21C51557B373006D24CF /* MapViewController.xib in Resources */,
+				047A21C71557B373006D24CF /* MusicVC.xib in Resources */,
+				047A21C91557B373006D24CF /* pause.png in Resources */,
+				047A21CA1557B373006D24CF /* play.png in Resources */,
+				047A21CB1557B373006D24CF /* 1-greenheron-image.jpg in Resources */,
+				047A21CC1557B373006D24CF /* 1-greenheron-image_tn.jpg in Resources */,
+				047A21CD1557B373006D24CF /* 1-GreenHeron-short.wav in Resources */,
+				047A21CE1557B373006D24CF /* 1-greenheron.txt in Resources */,
+				047A21CF1557B373006D24CF /* 10-BarredOwl-image.jpg in Resources */,
+				047A21D01557B373006D24CF /* 10-BarredOwl-image_tn.jpg in Resources */,
+				047A21D11557B373006D24CF /* 10-BarredOwl-long.wav in Resources */,
+				047A21D21557B373006D24CF /* 10-BarredOwl-short.wav in Resources */,
+				047A21D31557B373006D24CF /* 10-BarredOwl.txt in Resources */,
+				047A21D41557B373006D24CF /* 11-AmericanCrow-long.wav in Resources */,
+				047A21D51557B373006D24CF /* 11-AmericanCrow-short.wav in Resources */,
+				047A21D61557B373006D24CF /* 11-americancrow.jpg in Resources */,
+				047A21D71557B373006D24CF /* 11-americancrow.txt in Resources */,
+				047A21D81557B373006D24CF /* 11-americancrow_tn.jpg in Resources */,
+				047A21D91557B373006D24CF /* 12-black-crowned night-heron-image.jpg in Resources */,
+				047A21DA1557B373006D24CF /* 12-black-crowned night-heron-image_tn.jpg in Resources */,
+				047A21DB1557B373006D24CF /* 12-black-crowned night-heron.txt in Resources */,
+				047A21DC1557B373006D24CF /* 12-Black-crownedNight-Heron-long.mp4 in Resources */,
+				047A21DD1557B373006D24CF /* 13-Yellow-crowned Night-Heron-long.mp3 in Resources */,
+				047A21DE1557B373006D24CF /* 13-yellow-crowned-night-heron.jpg in Resources */,
+				047A21DF1557B373006D24CF /* 13-yellow-crowned-night-heron.txt in Resources */,
+				047A21E01557B373006D24CF /* 13-yellow-crowned-night-heron_tn.jpg in Resources */,
+				047A21E11557B373006D24CF /* 14-CarolinaChickadee-image.jpg in Resources */,
+				047A21E21557B373006D24CF /* 14-CarolinaChickadee-image_tn.jpg in Resources */,
+				047A21E31557B373006D24CF /* 14-CarolinaChickadee-long.wav in Resources */,
+				047A21E41557B373006D24CF /* 14-CarolinaChickadee-short.wav in Resources */,
+				047A21E51557B373006D24CF /* 14-CarolinaChickadee.txt in Resources */,
+				047A21E61557B373006D24CF /* 15-TuftedTitmouse-image.jpg in Resources */,
+				047A21E71557B373006D24CF /* 15-TuftedTitmouse-image_tn.jpg in Resources */,
+				047A21E81557B373006D24CF /* 15-TuftedTitmouse-long.wav in Resources */,
+				047A21E91557B373006D24CF /* 15-TuftedTitmouse-short.wav in Resources */,
+				047A21EA1557B373006D24CF /* 15-TuftedTitmouse.txt in Resources */,
+				047A21EB1557B373006D24CF /* 16-CarolinaWren-image.jpg in Resources */,
+				047A21EC1557B373006D24CF /* 16-CarolinaWren-image_tn.jpg in Resources */,
+				047A21ED1557B373006D24CF /* 16-CarolinaWren-long.wav in Resources */,
+				047A21EE1557B373006D24CF /* 16-CarolinaWren-short.wav in Resources */,
+				047A21EF1557B373006D24CF /* 16-CarolinaWren.txt in Resources */,
+				047A21F01557B373006D24CF /* 17-WinterWren-image.jpg in Resources */,
+				047A21F11557B373006D24CF /* 17-WinterWren-image_tn.jpg in Resources */,
+				047A21F21557B373006D24CF /* 17-WinterWren-long.mp3 in Resources */,
+				047A21F31557B373006D24CF /* 17-WinterWren.txt in Resources */,
+				047A21F41557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image.jpg in Resources */,
+				047A21F51557B373006D24CF /* 18-Ruby-Crowned-Kinglet-image_tn.jpg in Resources */,
+				047A21F61557B373006D24CF /* 18-Ruby-crowned-Kinglet-long.mp3 in Resources */,
+				047A21F71557B373006D24CF /* 18-Ruby-Crowned-Kinglet.txt in Resources */,
+				047A21F81557B373006D24CF /* 19-HermitThrush-image.jpg in Resources */,
+				047A21F91557B373006D24CF /* 19-HermitThrush-image_tn.jpg in Resources */,
+				047A21FA1557B373006D24CF /* 19-HermitThrush-long.mp3 in Resources */,
+				047A21FB1557B373006D24CF /* 19-HermitThrush.txt in Resources */,
+				047A21FC1557B373006D24CF /* 2-Red-shouldered Hawk-long.wav in Resources */,
+				047A21FD1557B373006D24CF /* 2-Red-shouldered Hawk-short.wav in Resources */,
+				047A21FE1557B373006D24CF /* 2-Red-shouldered Hawk.txt in Resources */,
+				047A21FF1557B373006D24CF /* 2-redshoulderedhawk-image.jpg in Resources */,
+				047A22001557B373006D24CF /* 2-redshoulderedhawk-image_tn.jpg in Resources */,
+				047A22011557B373006D24CF /* 20-AmericanRobin-image.jpg in Resources */,
+				047A22021557B373006D24CF /* 20-AmericanRobin-image_tn.jpg in Resources */,
+				047A22031557B373006D24CF /* 20-AmericanRobin-long.wav in Resources */,
+				047A22041557B373006D24CF /* 20-AmericanRobin-short.wav in Resources */,
+				047A22051557B373006D24CF /* 20-AmericanRobin.txt in Resources */,
+				047A22061557B373006D24CF /* 21-NorthernMockingbird-image.jpg in Resources */,
+				047A22071557B373006D24CF /* 21-NorthernMockingbird-image_tn.jpg in Resources */,
+				047A22081557B373006D24CF /* 21-NorthernMockingbird-long.wav in Resources */,
+				047A22091557B373006D24CF /* 21-NorthernMockingbird-short.wav in Resources */,
+				047A220A1557B373006D24CF /* 21-NorthernMockingbird.txt in Resources */,
+				047A220B1557B373006D24CF /* 22-CedarWaxwing-image.jpg in Resources */,
+				047A220C1557B373006D24CF /* 22-CedarWaxwing-image_tn.jpg in Resources */,
+				047A220D1557B373006D24CF /* 22-CedarWaxwing-long.mp3 in Resources */,
+				047A220E1557B373006D24CF /* 22-CedarWaxwing.txt in Resources */,
+				047A220F1557B373006D24CF /* 23-Yellow-rumpedWarbler-image.jpg in Resources */,
+				047A22101557B373006D24CF /* 23-Yellow-rumpedWarbler-image_tn.jpg in Resources */,
+				047A22111557B373006D24CF /* 23-Yellow-rumpedWarbler-long.mp3 in Resources */,
+				047A22121557B373006D24CF /* 23-Yellow-rumpedWarbler.txt in Resources */,
+				047A22131557B373006D24CF /* 24-Orange-crownedWarbler-image.jpg in Resources */,
+				047A22141557B373006D24CF /* 24-Orange-crownedWarbler-image_tn.jpg in Resources */,
+				047A22151557B373006D24CF /* 24-Orange-crownedWarbler-long.mp3 in Resources */,
+				047A22161557B373006D24CF /* 24-Orange-crownedWarbler.txt in Resources */,
+				047A22171557B373006D24CF /* 25-CommonYellowthroat-image.jpg in Resources */,
+				047A22181557B373006D24CF /* 25-CommonYellowthroat-image_tn.jpg in Resources */,
+				047A22191557B373006D24CF /* 25-CommonYellowthroat-long.wav in Resources */,
+				047A221A1557B373006D24CF /* 25-CommonYellowthroat-short.wav in Resources */,
+				047A221B1557B373006D24CF /* 25-CommonYellowthroat.txt in Resources */,
+				047A221C1557B373006D24CF /* 26-PineWarbler-image.jpg in Resources */,
+				047A221D1557B373006D24CF /* 26-PineWarbler-image_tn.jpg in Resources */,
+				047A221E1557B373006D24CF /* 26-PineWarbler-long.wav in Resources */,
+				047A221F1557B373006D24CF /* 26-PineWarbler-short.wav in Resources */,
+				047A22201557B373006D24CF /* 26-PineWarbler.txt in Resources */,
+				047A22211557B373006D24CF /* 27-NorthernCardinal-image.jpg in Resources */,
+				047A22221557B373006D24CF /* 27-NorthernCardinal-image_tn.jpg in Resources */,
+				047A22231557B373006D24CF /* 27-NorthernCardinal-long.wav in Resources */,
+				047A22241557B373006D24CF /* 27-NorthernCardinal-short.wav in Resources */,
+				047A22251557B373006D24CF /* 27-NorthernCardinal.txt in Resources */,
+				047A22261557B373006D24CF /* 28-White-throatedSparrow-image.jpg in Resources */,
+				047A22271557B373006D24CF /* 28-White-throatedSparrow-image_tn.jpg in Resources */,
+				047A22281557B373006D24CF /* 28-White-throatedSparrow-long.mp3.mp3 in Resources */,
+				047A22291557B373006D24CF /* 28-White-throatedSparrow.txt in Resources */,
+				047A222A1557B373006D24CF /* 29-Blue-grayGnatcatcher-image.jpg in Resources */,
+				047A222B1557B373006D24CF /* 29-Blue-grayGnatcatcher-image_tn.jpg in Resources */,
+				047A222C1557B373006D24CF /* 29-Blue-grayGnatcatcher-long.wav in Resources */,
+				047A222D1557B373006D24CF /* 29-Blue-grayGnatcatcher-short.wav in Resources */,
+				047A222E1557B373006D24CF /* 29-Blue-grayGnatcatcher.txt in Resources */,
+				047A222F1557B373006D24CF /* 3-MourningDove-image.jpg in Resources */,
+				047A22301557B373006D24CF /* 3-MourningDove-image_tn.jpg in Resources */,
+				047A22311557B373006D24CF /* 3-MourningDove-long.wav in Resources */,
+				047A22321557B373006D24CF /* 3-MourningDove-short.wav in Resources */,
+				047A22331557B373006D24CF /* 3-MourningDove.txt in Resources */,
+				047A22341557B373006D24CF /* 30-AmericanGoldfinch-image.jpg in Resources */,
+				047A22351557B373006D24CF /* 30-AmericanGoldfinch-image_tn.jpg in Resources */,
+				047A22361557B373006D24CF /* 30-AmericanGoldfinch-long.mp3 in Resources */,
+				047A22371557B373006D24CF /* 30-AmericanGoldfinch.txt in Resources */,
+				047A22381557B373006D24CF /* 31-coopershawk-image.jpg in Resources */,
+				047A22391557B373006D24CF /* 31-coopershawk-image_tn.jpg in Resources */,
+				047A223A1557B373006D24CF /* 31-CoopersHawk-long.mp3 in Resources */,
+				047A223B1557B373006D24CF /* 31-coopershawk.txt in Resources */,
+				047A223C1557B373006D24CF /* 32-White-wingedDove-image.jpg in Resources */,
+				047A223D1557B373006D24CF /* 32-White-wingedDove-image_tn.jpg in Resources */,
+				047A223E1557B373006D24CF /* 32-White-wingedDove-long.mp3 in Resources */,
+				047A223F1557B373006D24CF /* 32-White-wingedDove.txt in Resources */,
+				047A22401557B373006D24CF /* 33-Ruby-throatedHummingbird-image.jpg in Resources */,
+				047A22411557B373006D24CF /* 33-Ruby-throatedHummingbird-image_tn.jpg in Resources */,
+				047A22421557B373006D24CF /* 33-Ruby-throatedHummingbird-long.mp3 in Resources */,
+				047A22431557B373006D24CF /* 33-Ruby-throatedHummingbird.txt in Resources */,
+				047A22441557B373006D24CF /* 34-GreatHornedOwl-image.jpg in Resources */,
+				047A22451557B373006D24CF /* 34-GreatHornedOwl-image_tn.jpg in Resources */,
+				047A22461557B373006D24CF /* 34-GreatHornedOwl-long.wav in Resources */,
+				047A22471557B373006D24CF /* 34-GreatHornedOwl-short.wav in Resources */,
+				047A22481557B373006D24CF /* 34-GreatHornedOwl.txt in Resources */,
+				047A22491557B373006D24CF /* 35-Yellow-belliedSapsucker-image.jpg in Resources */,
+				047A224A1557B373006D24CF /* 35-Yellow-belliedSapsucker-image_tn.jpg in Resources */,
+				047A224B1557B373006D24CF /* 35-Yellow-belliedSapsucker-long.mp3 in Resources */,
+				047A224C1557B373006D24CF /* 35-Yellow-belliedSapsucker.txt in Resources */,
+				047A224D1557B373006D24CF /* 36-EasternPhoebe-image.jpg in Resources */,
+				047A224E1557B373006D24CF /* 36-EasternPhoebe-image_tn.jpg in Resources */,
+				047A224F1557B373006D24CF /* 36-EasternPhoebe-long.mp3 in Resources */,
+				047A22501557B373006D24CF /* 36-EasternPhoebe.txt in Resources */,
+				047A22511557B373006D24CF /* 4-EasternScreech-Owl-image.jpg in Resources */,
+				047A22521557B373006D24CF /* 4-EasternScreech-Owl-image_tn.jpg in Resources */,
+				047A22531557B373006D24CF /* 4-EasternScreech-Owl-long.wav in Resources */,
+				047A22541557B373006D24CF /* 4-EasternScreech-Owl-short.wav in Resources */,
+				047A22551557B373006D24CF /* 4-EasternScreech-Owl.txt in Resources */,
+				047A22561557B373006D24CF /* 5-DownyWoodpecker-image.jpg in Resources */,
+				047A22571557B373006D24CF /* 5-DownyWoodpecker-image_tn.jpg in Resources */,
+				047A22581557B373006D24CF /* 5-DownyWoodpecker-short.wav in Resources */,
+				047A22591557B373006D24CF /* 5-DownyWoodpecker.txt in Resources */,
+				047A225A1557B373006D24CF /* 6-Red-belliedWoodpecker-image.jpg in Resources */,
+				047A225B1557B373006D24CF /* 6-Red-belliedWoodpecker-image_tn.jpg in Resources */,
+				047A225C1557B373006D24CF /* 6-Red-belliedWoodpecker-long.wav in Resources */,
+				047A225D1557B373006D24CF /* 6-Red-belliedWoodpecker-short.wav in Resources */,
+				047A225E1557B373006D24CF /* 6-Red-belliedWoodpecker.txt in Resources */,
+				047A225F1557B373006D24CF /* 7-BlueJay-image.jpg in Resources */,
+				047A22601557B373006D24CF /* 7-BlueJay-image_tn.jpg in Resources */,
+				047A22611557B373006D24CF /* 7-BlueJay-long.wav in Resources */,
+				047A22621557B373006D24CF /* 7-BlueJay-short.wav in Resources */,
+				047A22631557B373006D24CF /* 7-BlueJay.txt in Resources */,
+				047A22641557B373006D24CF /* 8-PileatedWoodpecker-image.jpg in Resources */,
+				047A22651557B373006D24CF /* 8-PileatedWoodpecker-image_tn.jpg in Resources */,
+				047A22661557B373006D24CF /* 8-PileatedWoodpecker-short.wav in Resources */,
+				047A22671557B373006D24CF /* 8-PileatedWoodpecker.txt in Resources */,
+				047A22681557B373006D24CF /* 9-White-eyedVireo-image.jpg in Resources */,
+				047A22691557B373006D24CF /* 9-White-eyedVireo-image_tn.jpg in Resources */,
+				047A226A1557B373006D24CF /* 9-White-eyedVireo-long.wav in Resources */,
+				047A226B1557B373006D24CF /* 9-White-eyedVireo-short.wav in Resources */,
+				047A226C1557B373006D24CF /* 9-White-eyedVireo.txt in Resources */,
+				047A226D1557B373006D24CF /* about_icon.png in Resources */,
+				047A226E1557B373006D24CF /* arboretum_logo.png in Resources */,
+				047A226F1557B373006D24CF /* arrow_button_pressed.png in Resources */,
+				047A22701557B373006D24CF /* arrow_button_unpressed.png in Resources */,
+				047A22711557B373006D24CF /* background.png in Resources */,
+				047A22721557B373006D24CF /* bird_watch.png in Resources */,
+				047A22731557B373006D24CF /* category_plank.png in Resources */,
+				047A22741557B373006D24CF /* category_plank_new.png in Resources */,
+				047A22751557B373006D24CF /* descr.png in Resources */,
+				047A22761557B373006D24CF /* description_icon.png in Resources */,
+				047A22771557B373006D24CF /* down_arrow_pressed.png in Resources */,
+				047A22781557B373006D24CF /* down_arrow_unpressed.png in Resources */,
+				047A22791557B373006D24CF /* end_button_pressed.png in Resources */,
+				047A227A1557B373006D24CF /* end_button_unpressed.png in Resources */,
+				047A227B1557B373006D24CF /* icon.png in Resources */,
+				047A227C1557B373006D24CF /* icon_quiz_inactive.png in Resources */,
+				047A227D1557B373006D24CF /* list_of_birds_icon.png in Resources */,
+				047A227E1557B373006D24CF /* list_picture_border.png in Resources */,
+				047A227F1557B373006D24CF /* list_plank.png in Resources */,
+				047A22801557B373006D24CF /* main_button.jpg in Resources */,
+				047A22811557B373006D24CF /* main_menu_background.png in Resources */,
+				047A22821557B373006D24CF /* main_menu_logo.png in Resources */,
+				047A22831557B373006D24CF /* menu_background.jpg in Resources */,
+				047A22841557B373006D24CF /* music.png in Resources */,
+				047A22851557B373006D24CF /* music_icon.png in Resources */,
+				047A22861557B373006D24CF /* ok_button_pressed.png in Resources */,
+				047A22871557B373006D24CF /* ok_button_unpressed.png in Resources */,
+				047A22881557B373006D24CF /* play_button_pressed.png in Resources */,
+				047A22891557B373006D24CF /* play_button_unpressed.png in Resources */,
+				047A228A1557B373006D24CF /* resuts_overview_background.png in Resources */,
+				047A228B1557B373006D24CF /* sight.png in Resources */,
+				047A228C1557B373006D24CF /* speaker_normal.9.png in Resources */,
+				047A228D1557B373006D24CF /* start_button_pressed.png in Resources */,
+				047A228E1557B373006D24CF /* start_button_unpressed.png in Resources */,
+				047A228F1557B373006D24CF /* textbox_for_long_description.png in Resources */,
+				047A22901557B373006D24CF /* textxbox_for_sounds.png in Resources */,
+				047A22911557B373006D24CF /* Thumbs.db in Resources */,
+				047A22921557B373006D24CF /* top_bar.png in Resources */,
+				047A22931557B373006D24CF /* trainer_icon.png in Resources */,
+				047A22941557B373006D24CF /* trainer_playback_controls_background.png in Resources */,
+				047A22951557B373006D24CF /* up_arrow_pressed.png in Resources */,
+				047A22961557B373006D24CF /* up_arrow_unpressed.png in Resources */,
+				047A22971557B373006D24CF /* zoom.png in Resources */,
+				047A22981557B373006D24CF /* zoom_in_button_pressed.png in Resources */,
+				047A22991557B373006D24CF /* zoom_in_button_unpressed.png in Resources */,
+				047A229A1557B373006D24CF /* zoom_out_button_pressed.png in Resources */,
+				047A229B1557B373006D24CF /* zoom_out_button_unpressed.png in Resources */,
+				047A229C1557B373006D24CF /* rewind.png in Resources */,
+				047A229F1557B373006D24CF /* SwitcherCellVC.xib in Resources */,
+				047A22A01557B373006D24CF /* win.wav in Resources */,
+				047A22C31557E27E006D24CF /* trainer_start_icon.png in Resources */,
+				047A22C51557E292006D24CF /* main_menu_button_unpressed.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		047A206A1557B31F006D24CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				047A21A81557B373006D24CF /* AboutViewController.m in Sources */,
+				047A21AA1557B373006D24CF /* AlphabetViewController.m in Sources */,
+				047A21AE1557B373006D24CF /* Bird.m in Sources */,
+				047A21AF1557B373006D24CF /* BirdCell.m in Sources */,
+				047A21B21557B373006D24CF /* birdsAppDelegate.m in Sources */,
+				047A21B31557B373006D24CF /* DesciptionVC.m in Sources */,
+				047A21B51557B373006D24CF /* DetailTabController.m in Sources */,
+				047A21BE1557B373006D24CF /* GameOptionsViewController.m in Sources */,
+				047A21C01557B373006D24CF /* GameVC.m in Sources */,
+				047A21C31557B373006D24CF /* main.m in Sources */,
+				047A21C41557B373006D24CF /* MapViewController.m in Sources */,
+				047A21C61557B373006D24CF /* MusicVC.m in Sources */,
+				047A21C81557B373006D24CF /* NSMutableArray+Shuffle.m in Sources */,
+				047A229D1557B373006D24CF /* RootViewController.m in Sources */,
+				047A229E1557B373006D24CF /* SwitcherCellVC.m in Sources */,
+				047A22C11557E17E006D24CF /* BirdAnnotation.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		047A20A21557B373006D24CF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047A20A31557B373006D24CF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		047A20A41557B373006D24CF /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047A20A51557B373006D24CF /* en */,
+			);
+			name = MainWindow.xib;
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		047A20A61557B373006D24CF /* RootViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				047A20A71557B373006D24CF /* en */,
+			);
+			name = RootViewController.xib;
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		047A20841557B31F006D24CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		047A20851557B31F006D24CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		047A20871557B31F006D24CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "birds/birds-Prefix.pch";
+				INFOPLIST_FILE = "birds/birds-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/birds/facebook-ios-sdk\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		047A20881557B31F006D24CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "birds/birds-Prefix.pch";
+				INFOPLIST_FILE = "birds/birds-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/birds/facebook-ios-sdk\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		047A20681557B31F006D24CF /* Build configuration list for PBXProject "birds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047A20841557B31F006D24CF /* Debug */,
+				047A20851557B31F006D24CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		047A20861557B31F006D24CF /* Build configuration list for PBXNativeTarget "birds" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				047A20871557B31F006D24CF /* Debug */,
+				047A20881557B31F006D24CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 047A20651557B31F006D24CF /* Project object */;
+}
