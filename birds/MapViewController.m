@@ -9,7 +9,7 @@
 #import "MapViewController.h"
 #import "birdsAppDelegate.h"
 #import "BirdAnnotation.h"
-#import "BridgeAnnotation.h"
+
 
 @interface MapViewController ()
 
@@ -79,6 +79,14 @@
     [self.mapView setRegion:newRegion animated:YES];
     
 }
++ (CGFloat)annotationPadding;
+{
+    return 10.0f;
+}
++ (CGFloat)calloutHeight;
+{
+    return 33.0f;
+}
 
 - (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
@@ -96,25 +104,43 @@
         [mapView dequeueReusableAnnotationViewWithIdentifier:BridgeAnnotationIdentifier];
         if (!pinView)
         {
-            // if an existing pin view was not available, create one
-            MKPinAnnotationView* customPinView = [[MKPinAnnotationView alloc]
-                                                   initWithAnnotation:annotation reuseIdentifier:BridgeAnnotationIdentifier];
-            customPinView.pinColor = MKPinAnnotationColorPurple;
-            customPinView.animatesDrop = YES;
-            customPinView.canShowCallout = YES;
+            MKAnnotationView *annotationView = [[MKAnnotationView alloc] initWithAnnotation:annotation
+                                                                             reuseIdentifier:@"BirdAnnotation"];
+            annotationView.canShowCallout = YES;
             
-            // add a detail disclosure button to the callout which will open a new view controller page
-            //
-            // note: you can assign a specific call out accessory view, or as MKMapViewDelegate you can implement:
-            //  - (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control;
-            //
+            UIImage *flagImage = [UIImage imageNamed:@"pin.png"];
+            
+            CGRect resizeRect;
+            
+            resizeRect.size = flagImage.size;
+            CGSize maxSize = CGRectInset(self.view.bounds,
+                                         [MapViewController annotationPadding],
+                                         [MapViewController annotationPadding]).size;
+            maxSize.height -= self.navigationController.navigationBar.frame.size.height + [MapViewController calloutHeight];
+            if (resizeRect.size.width > maxSize.width)
+                resizeRect.size = CGSizeMake(maxSize.width, resizeRect.size.height / resizeRect.size.width * maxSize.width);
+            if (resizeRect.size.height > maxSize.height)
+                resizeRect.size = CGSizeMake(resizeRect.size.width / resizeRect.size.height * maxSize.height, maxSize.height);
+            
+            resizeRect.origin = (CGPoint){0.0f, 0.0f};
+            UIGraphicsBeginImageContext(resizeRect.size);
+            [flagImage drawInRect:resizeRect];
+            UIImage *resizedImage = UIGraphicsGetImageFromCurrentImageContext();
+            UIGraphicsEndImageContext();
+            
+            annotationView.image = resizedImage;
+            annotationView.opaque = NO;
+            
+            UIImageView *sfIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pin.png"]];
+            annotationView.leftCalloutAccessoryView = sfIconView;
             UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+            rightButton.tintColor=[UIColor brownColor];
             [rightButton addTarget:self
                             action:@selector(showDetails:)
                   forControlEvents:UIControlEventTouchUpInside];
-            customPinView.rightCalloutAccessoryView = rightButton;
-            
-            return customPinView;
+            annotationView.rightCalloutAccessoryView=rightButton;
+                        
+            return annotationView;
         }
         else
         {
@@ -124,5 +150,8 @@
     }
     return nil;
 }
-
+- (void)showDetails:(id)sender
+{
+    
+}
 @end

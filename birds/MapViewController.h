@@ -22,4 +22,7 @@
 @property (nonatomic) NSMutableArray *annotationsArray;
 
 @property (nonatomic) CLLocationManager *locationManager;
+
+- (void)showDetails:(id)sender;
+
 @end

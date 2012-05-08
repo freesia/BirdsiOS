@@ -267,6 +267,8 @@
 		047AD2F41559B85A003A5E4F /* icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2F31559B85A003A5E4F /* icon_57.png */; };
 		047AD2F61559B85D003A5E4F /* icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2F51559B85D003A5E4F /* icon_114.png */; };
 		047AD2F81559B9B4003A5E4F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2F71559B9B4003A5E4F /* Default.png */; };
+		047AD2FA1559BD4F003A5E4F /* pin.png in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2F91559BD4F003A5E4F /* pin.png */; };
+		047AD2FC1559BDF3003A5E4F /* detail.png in Resources */ = {isa = PBXBuildFile; fileRef = 047AD2FB1559BDF3003A5E4F /* detail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -560,6 +562,8 @@
 		047AD2F31559B85A003A5E4F /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
 		047AD2F51559B85D003A5E4F /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
 		047AD2F71559B9B4003A5E4F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		047AD2F91559BD4F003A5E4F /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
+		047AD2FB1559BDF3003A5E4F /* detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -685,6 +689,8 @@
 		047A20CF1557B373006D24CF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				047AD2FB1559BDF3003A5E4F /* detail.png */,
+				047AD2F91559BD4F003A5E4F /* pin.png */,
 				047A22C41557E292006D24CF /* main_menu_button_unpressed.png */,
 				047A22C21557E27E006D24CF /* trainer_start_icon.png */,
 				047A21A71557B373006D24CF /* win.wav */,
@@ -1341,6 +1347,8 @@
 				047AD2F41559B85A003A5E4F /* icon_57.png in Resources */,
 				047AD2F61559B85D003A5E4F /* icon_114.png in Resources */,
 				047AD2F81559B9B4003A5E4F /* Default.png in Resources */,
+				047AD2FA1559BD4F003A5E4F /* pin.png in Resources */,
+				047AD2FC1559BDF3003A5E4F /* detail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
