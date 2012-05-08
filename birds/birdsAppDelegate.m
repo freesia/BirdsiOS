@@ -37,7 +37,7 @@
 	
 	// Query the database for all animal records and construct the "animals" array
 	[self readAnimalsFromDatabase];
-    [self checkAndCreateDatabase];
+    
     [self readBirdsLocationsFromDatabase];
     
     // Override point for customization after application launch.
@@ -238,13 +238,16 @@
 			// Loop through the results and add them to the feeds array
 			while(sqlite3_step(compiledStatement2) == SQLITE_ROW) {
 				// Read the data from the result row
-				NSString *aLongtitude = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement2, 1)];
-				NSString *aLatitude = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement2, 2)];
+                double aLongtitude=sqlite3_column_double(compiledStatement2, 1);
+				double aLatitude=sqlite3_column_double(compiledStatement2, 2);
+				
                 NSString *aName=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement2, 3)];
                 NSString *aSpeciesName =[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement2, 0)];
-                				
+                CLLocationCoordinate2D location;
+                location.latitude = (double) aLatitude;
+                location.longitude = (double) aLongtitude;				
 				// Create a new animal object with the data from the database
-				BirdAnnotation *birdAnotation =[[BirdAnnotation alloc] initWithName:aName longtitude:aLongtitude latitude:aLatitude speciesName:aSpeciesName];
+				BirdAnnotation *birdAnotation =[[BirdAnnotation alloc] initWithTitle:aName andCoordinate:location andSubtitle:aSpeciesName];
 				
 				// Add the animal object to the animals Array
 				[birdLocations addObject:birdAnotation];

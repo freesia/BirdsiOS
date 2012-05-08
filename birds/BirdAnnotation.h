@@ -13,20 +13,18 @@
 @interface BirdAnnotation : NSObject <MKAnnotation>
 {
 
-    NSString *name;
-    NSString *latitudeString;
-    NSString *longtitudeString;
-    NSString *speciesName;
+    NSString *title;
+
+    NSString *subtitle;
+    
+   
+	CLLocationCoordinate2D coordinate;
 }
 
+@property (nonatomic,copy) NSString *subtitle;
+@property (nonatomic, copy) NSString *title;
+@property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 
-@property (nonatomic) NSNumber *latitude;
-@property (nonatomic) NSNumber *longitude;
-@property (nonatomic) NSString *latitudeString;
-@property (nonatomic) NSString *longitudeString;
-@property (nonatomic) NSString *name;
-@property (nonatomic) NSString *speciesName;
+- (id)initWithTitle:(NSString *)ttl andCoordinate:(CLLocationCoordinate2D)c2d andSubtitle:(NSString *)sbTitl;
 
--(id)initWithName:(NSString *)n longtitude:(NSString *)l latitude:(NSString *)lat speciesName:(NSString *)spec;
--(double)convertWithString: (NSString *)string;
 @end

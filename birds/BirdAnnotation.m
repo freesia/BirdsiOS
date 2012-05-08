@@ -11,55 +11,21 @@
 @implementation BirdAnnotation
 
 
-@synthesize name;
-@synthesize longitudeString;
-@synthesize latitudeString;
-@synthesize speciesName;
-@synthesize longitude;
-@synthesize latitude;
+@synthesize title;
+@synthesize subtitle;
+@synthesize coordinate;
 
 
--(id)initWithName:(NSString *)n longtitude:(NSString *)l latitude:(NSString *)lat speciesName:(NSString *)spec {
-	self.name = n;
-	self.longitudeString = l;
-	self.latitudeString = lat;
-    self.speciesName=spec;
+
+- (id)initWithTitle:(NSString *)ttl andCoordinate:(CLLocationCoordinate2D)c2d andSubtitle:(NSString *)sbTitl{
+	self = [super init];
+	title = ttl;
+	coordinate = c2d;
+    subtitle=sbTitl;
+    
 	return self;
 }
-- (CLLocationCoordinate2D)coordinate;
-{
-    CLLocationCoordinate2D theCoordinate;
-    theCoordinate.latitude = [self convertWithString:latitudeString];
-    theCoordinate.longitude = [self convertWithString:longitudeString];
-    return theCoordinate; 
-}
-- (NSNumber *)latitude {
-    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-    [f setNumberStyle:NSNumberFormatterDecimalStyle];
-    NSNumber * myNumber = [f numberFromString:latitudeString];
-    return myNumber;
-}
-- (NSNumber *)longitude {
-    NSNumberFormatter * f = [[NSNumberFormatter alloc] init];
-    [f setNumberStyle:NSNumberFormatterDecimalStyle];
-    NSNumber * myNumber = [f numberFromString:longitudeString];
-    return myNumber;
-}
-- (NSString *)title
-{
-    return name;
-}
 
 
-- (NSString *)subtitle
-{
-    return speciesName;
-}
 
--(double)convertWithString: (NSString *)string {
-   
-    double myNumber = [string doubleValue];
-    
-    return myNumber;
-}
 @end
