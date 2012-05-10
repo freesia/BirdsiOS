@@ -190,6 +190,7 @@
 			// Loop through the results and add them to the feeds array
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
 				// Read the data from the result row
+                int aId= sqlite3_column_int(compiledStatement, 0);
 				NSString *aName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
 				NSString *aSpecies = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)];
                 NSString *aShortSound;
@@ -209,7 +210,7 @@
                 NSString *aText=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];
 				
 				// Create a new animal object with the data from the database
-				Bird *bird = [[Bird alloc] initWithName:aName speciesName:aSpecies image:aImage text:aText shortSound:aShortSound longSound:aLongSound];
+				Bird *bird = [[Bird alloc] initWithName:aName speciesName:aSpecies image:aImage text:aText shortSound:aShortSound longSound:aLongSound id:aId];
 				
 				// Add the animal object to the animals Array
 				[animals addObject:bird];
@@ -238,16 +239,18 @@
 			// Loop through the results and add them to the feeds array
 			while(sqlite3_step(compiledStatement2) == SQLITE_ROW) {
 				// Read the data from the result row
-                double aLongtitude=sqlite3_column_double(compiledStatement2, 1);
-				double aLatitude=sqlite3_column_double(compiledStatement2, 2);
+                NSString *anImage=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement2, 0)];
+                int aId= sqlite3_column_int(compiledStatement2, 1);
+                double aLongtitude=sqlite3_column_double(compiledStatement2, 3);
+				double aLatitude=sqlite3_column_double(compiledStatement2, 4);
 				
-                NSString *aName=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement2, 3)];
-                NSString *aSpeciesName =[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement2, 0)];
+                NSString *aName=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement2, 5)];
+                NSString *aSpeciesName =[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement2, 2)];
                 CLLocationCoordinate2D location;
                 location.latitude = (double) aLatitude;
                 location.longitude = (double) aLongtitude;				
 				// Create a new animal object with the data from the database
-				BirdAnnotation *birdAnotation =[[BirdAnnotation alloc] initWithTitle:aName andCoordinate:location andSubtitle:aSpeciesName];
+				BirdAnnotation *birdAnotation =[[BirdAnnotation alloc] initWithTitle:aName andCoordinate:location andSubtitle:aSpeciesName andID:aId andImage:anImage];
 				
 				// Add the animal object to the animals Array
 				[birdLocations addObject:birdAnotation];

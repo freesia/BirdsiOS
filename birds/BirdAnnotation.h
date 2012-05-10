@@ -16,15 +16,18 @@
     NSString *title;
 
     NSString *subtitle;
+    NSString *image;
     
    
 	CLLocationCoordinate2D coordinate;
+    int iD;
 }
-
+@property (nonatomic) NSString *image;
+@property (nonatomic) int iD;
 @property (nonatomic,copy) NSString *subtitle;
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;
 
-- (id)initWithTitle:(NSString *)ttl andCoordinate:(CLLocationCoordinate2D)c2d andSubtitle:(NSString *)sbTitl;
+- (id)initWithTitle:(NSString *)ttl andCoordinate:(CLLocationCoordinate2D)c2d andSubtitle:(NSString *)sbTitl andID:(int)i andImage:(NSString*)im;
 
 @end

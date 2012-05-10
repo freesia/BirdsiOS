@@ -9,6 +9,7 @@
 #import "MapViewController.h"
 #import "birdsAppDelegate.h"
 #import "BirdAnnotation.h"
+#import "Bird.h"
 
 
 @interface MapViewController ()
@@ -25,8 +26,8 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-       
-       
+     
+
     }
     return self;
 }
@@ -85,7 +86,7 @@
 }
 + (CGFloat)calloutHeight;
 {
-    return 33.0f;
+    return 50.0f;
 }
 
 - (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation
@@ -129,17 +130,17 @@
             UIGraphicsEndImageContext();
             
             annotationView.image = resizedImage;
-            annotationView.opaque = NO;
+            annotationView.opaque = YES;
+            BirdAnnotation *piu=annotation;
+            NSString *temp=[piu.image stringByReplacingOccurrencesOfString:@".jpg" withString:@"_tn.jpg"];
+            UIImageView *birdImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:temp]];
             
-            UIImageView *sfIconView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"pin.png"]];
-            annotationView.leftCalloutAccessoryView = sfIconView;
+            birdImage.frame=CGRectMake(0, 0, 60, 35);
+            birdImage.contentMode=UIViewContentModeScaleAspectFit;
+            annotationView.leftCalloutAccessoryView = birdImage;
             UIButton* rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
-            rightButton.tintColor=[UIColor brownColor];
-            [rightButton addTarget:self
-                            action:@selector(showDetails:)
-                  forControlEvents:UIControlEventTouchUpInside];
-            annotationView.rightCalloutAccessoryView=rightButton;
-                        
+                       annotationView.rightCalloutAccessoryView=rightButton;
+                                    
             return annotationView;
         }
         else
@@ -150,8 +151,21 @@
     }
     return nil;
 }
-- (void)showDetails:(id)sender
-{
+
+#pragma mark -
+#pragma mark MapView Delegate
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+   BirdAnnotation *piu= view.annotation;
+    NSLog(@"%@",piu.title);
     
-}
+    birdsAppDelegate *appDelegate = (birdsAppDelegate *)[[UIApplication sharedApplication] delegate];
+    for (int i=0; i<appDelegate.animals.count; i++) {
+        Bird *animal = (Bird *)[appDelegate.animals objectAtIndex:i];
+        if (piu.iD==animal.iD) {
+            NSLog(@"OLOLOLOLO");
+        }
+        
+        
+    }
+    }
 @end

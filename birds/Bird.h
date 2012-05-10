@@ -11,7 +11,7 @@
 @interface Bird : NSObject {
     NSString *name;
     NSString *speciesName;
-    NSString *id;
+    int iD;
     NSString *shortSound;
     NSString *long_sound;
     NSString *image;
@@ -20,11 +20,11 @@
 }
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *speciesName;
-@property (nonatomic) NSString *id;
+@property (nonatomic) int iD;
 @property (nonatomic) NSString *shortSound;
 @property (nonatomic) NSString *long_sound;
 @property (nonatomic) NSString *image;
 @property (nonatomic) NSString *text;
 
--(id)initWithName:(NSString *)n speciesName:(NSString *)d image:(NSString *)im text:(NSString*)txt shortSound:(NSString*)sound1 longSound:(NSString*)sound;
+-(id)initWithName:(NSString *)n speciesName:(NSString *)d image:(NSString *)im text:(NSString*)txt shortSound:(NSString*)sound1 longSound:(NSString*)sound id:(int)i;
 @end

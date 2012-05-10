@@ -559,9 +559,9 @@
 		047A22C01557E17E006D24CF /* BirdAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BirdAnnotation.m; sourceTree = "<group>"; };
 		047A22C21557E27E006D24CF /* trainer_start_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trainer_start_icon.png; sourceTree = "<group>"; };
 		047A22C41557E292006D24CF /* main_menu_button_unpressed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main_menu_button_unpressed.png; sourceTree = "<group>"; };
-		047AD2F31559B85A003A5E4F /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_57.png; sourceTree = "<group>"; };
-		047AD2F51559B85D003A5E4F /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_114.png; sourceTree = "<group>"; };
-		047AD2F71559B9B4003A5E4F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		047AD2F31559B85A003A5E4F /* icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_57.png; path = ../../icon_57.png; sourceTree = "<group>"; };
+		047AD2F51559B85D003A5E4F /* icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon_114.png; path = ../../icon_114.png; sourceTree = "<group>"; };
+		047AD2F71559B9B4003A5E4F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../../Default.png; sourceTree = "<group>"; };
 		047AD2F91559BD4F003A5E4F /* pin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pin.png; sourceTree = "<group>"; };
 		047AD2FB1559BDF3003A5E4F /* detail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = detail.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -588,9 +588,6 @@
 		047A20631557B31F006D24CF = {
 			isa = PBXGroup;
 			children = (
-				047AD2F71559B9B4003A5E4F /* Default.png */,
-				047AD2F51559B85D003A5E4F /* icon_114.png */,
-				047AD2F31559B85A003A5E4F /* icon_57.png */,
 				047A20781557B31F006D24CF /* birds */,
 				047A20711557B31F006D24CF /* Frameworks */,
 				047A206F1557B31F006D24CF /* Products */,
@@ -689,6 +686,9 @@
 		047A20CF1557B373006D24CF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				047AD2F71559B9B4003A5E4F /* Default.png */,
+				047AD2F51559B85D003A5E4F /* icon_114.png */,
+				047AD2F31559B85A003A5E4F /* icon_57.png */,
 				047AD2FB1559BDF3003A5E4F /* detail.png */,
 				047AD2F91559BD4F003A5E4F /* pin.png */,
 				047A22C41557E292006D24CF /* main_menu_button_unpressed.png */,

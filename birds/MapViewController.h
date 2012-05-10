@@ -14,6 +14,7 @@
     MKMapView *map;
     NSMutableArray *annotationsArray;
     
+    NSMutableArray *myArray;
     CLLocationManager *locationManager;
 
 }
