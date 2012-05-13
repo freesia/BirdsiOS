@@ -9,5 +9,5 @@
 #import "BirdCell.h"
 
 @implementation BirdCell
-@synthesize birdDiscr, birdImage, birdtitle;
+@synthesize birdDiscr, birdImage, birdtitle,sightLabel;
 @end

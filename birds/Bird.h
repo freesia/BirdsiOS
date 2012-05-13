@@ -16,8 +16,10 @@
     NSString *long_sound;
     NSString *image;
     NSString *text;
+    int sight;
         
 }
+@property (nonatomic) int sight;
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *speciesName;
 @property (nonatomic) int iD;
@@ -26,5 +28,5 @@
 @property (nonatomic) NSString *image;
 @property (nonatomic) NSString *text;
 
--(id)initWithName:(NSString *)n speciesName:(NSString *)d image:(NSString *)im text:(NSString*)txt shortSound:(NSString*)sound1 longSound:(NSString*)sound id:(int)i;
+-(id)initWithName:(NSString *)n speciesName:(NSString *)d image:(NSString *)im text:(NSString*)txt shortSound:(NSString*)sound1 longSound:(NSString*)sound id:(int)i sight: (int)s;
 @end

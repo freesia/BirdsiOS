@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		047807EB155C0520000CD8B7 /* SightingsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 047807E9155C0520000CD8B7 /* SightingsVC.m */; };
+		047807EC155C0520000CD8B7 /* SightingsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 047807EA155C0520000CD8B7 /* SightingsVC.xib */; };
+		047807F3155C0643000CD8B7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047807F2155C0643000CD8B7 /* CoreLocation.framework */; };
 		047A20731557B31F006D24CF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A20721557B31F006D24CF /* UIKit.framework */; };
 		047A20751557B31F006D24CF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A20741557B31F006D24CF /* Foundation.framework */; };
 		047A20771557B31F006D24CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047A20761557B31F006D24CF /* CoreGraphics.framework */; };
@@ -272,6 +275,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		047807E8155C0520000CD8B7 /* SightingsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SightingsVC.h; sourceTree = "<group>"; };
+		047807E9155C0520000CD8B7 /* SightingsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SightingsVC.m; sourceTree = "<group>"; };
+		047807EA155C0520000CD8B7 /* SightingsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SightingsVC.xib; sourceTree = "<group>"; };
+		047807F2155C0643000CD8B7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		047A206E1557B31F006D24CF /* birds.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = birds.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		047A20721557B31F006D24CF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		047A20741557B31F006D24CF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -571,6 +578,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047807F3155C0643000CD8B7 /* CoreLocation.framework in Frameworks */,
 				047A22AD1557B500006D24CF /* MapKit.framework in Frameworks */,
 				047A22A61557B414006D24CF /* AVFoundation.framework in Frameworks */,
 				047A22A41557B3FA006D24CF /* AudioToolbox.framework in Frameworks */,
@@ -585,6 +593,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		047807E6155C047B000CD8B7 /* Bird */ = {
+			isa = PBXGroup;
+			children = (
+				047A20911557B373006D24CF /* Bird.h */,
+				047A20921557B373006D24CF /* Bird.m */,
+			);
+			name = Bird;
+			sourceTree = "<group>";
+		};
+		047807E7155C0488000CD8B7 /* BirdAnnotation */ = {
+			isa = PBXGroup;
+			children = (
+				047A22BF1557E17E006D24CF /* BirdAnnotation.h */,
+				047A22C01557E17E006D24CF /* BirdAnnotation.m */,
+			);
+			name = BirdAnnotation;
+			sourceTree = "<group>";
+		};
+		047807ED155C0526000CD8B7 /* SightingsVC */ = {
+			isa = PBXGroup;
+			children = (
+				047807E8155C0520000CD8B7 /* SightingsVC.h */,
+				047807E9155C0520000CD8B7 /* SightingsVC.m */,
+				047807EA155C0520000CD8B7 /* SightingsVC.xib */,
+			);
+			name = SightingsVC;
+			sourceTree = "<group>";
+		};
 		047A20631557B31F006D24CF = {
 			isa = PBXGroup;
 			children = (
@@ -605,6 +641,7 @@
 		047A20711557B31F006D24CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				047807F2155C0643000CD8B7 /* CoreLocation.framework */,
 				047A20A81557B373006D24CF /* facebook-ios-sdk */,
 				047A22AC1557B500006D24CF /* MapKit.framework */,
 				047A22A51557B414006D24CF /* AVFoundation.framework */,
@@ -621,9 +658,9 @@
 			isa = PBXGroup;
 			children = (
 				047A22B41557B576006D24CF /* Common */,
-				047A22A81557B4A1006D24CF /* AlphabetViewController */,
-				047A22A71557B496006D24CF /* AboutViewController */,
 				047A22B11557B545006D24CF /* Model */,
+				047A22A71557B496006D24CF /* AboutViewController */,
+				047A22A81557B4A1006D24CF /* AlphabetViewController */,
 				047A22B21557B54E006D24CF /* BirdCell */,
 				047A22B31557B55B006D24CF /* DescriptionVC */,
 				047A22B01557B52E006D24CF /* DetailTabController */,
@@ -636,6 +673,7 @@
 				047A22D41557F108006D24CF /* birdsAppDelegate */,
 				047A20791557B31F006D24CF /* Supporting Files */,
 				047A20CF1557B373006D24CF /* Resources */,
+				047807ED155C0526000CD8B7 /* SightingsVC */,
 			);
 			path = birds;
 			sourceTree = "<group>";
@@ -955,7 +993,6 @@
 		047A22AB1557B4EF006D24CF /* MapViewController */ = {
 			isa = PBXGroup;
 			children = (
-				047A22BD1557E14D006D24CF /* AnnotationView */,
 				047A20C51557B373006D24CF /* MapViewController.h */,
 				047A20C61557B373006D24CF /* MapViewController.m */,
 				047A20C71557B373006D24CF /* MapViewController.xib */,
@@ -997,8 +1034,8 @@
 		047A22B11557B545006D24CF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				047A20911557B373006D24CF /* Bird.h */,
-				047A20921557B373006D24CF /* Bird.m */,
+				047807E7155C0488000CD8B7 /* BirdAnnotation */,
+				047807E6155C047B000CD8B7 /* Bird */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -1030,15 +1067,6 @@
 				047A20CC1557B373006D24CF /* NSMutableArray+Shuffle.m */,
 			);
 			name = Common;
-			sourceTree = "<group>";
-		};
-		047A22BD1557E14D006D24CF /* AnnotationView */ = {
-			isa = PBXGroup;
-			children = (
-				047A22BF1557E17E006D24CF /* BirdAnnotation.h */,
-				047A22C01557E17E006D24CF /* BirdAnnotation.m */,
-			);
-			name = AnnotationView;
 			sourceTree = "<group>";
 		};
 		047A22D31557F0D5006D24CF /* RootVC */ = {
@@ -1349,6 +1377,7 @@
 				047AD2F81559B9B4003A5E4F /* Default.png in Resources */,
 				047AD2FA1559BD4F003A5E4F /* pin.png in Resources */,
 				047AD2FC1559BDF3003A5E4F /* detail.png in Resources */,
+				047807EC155C0520000CD8B7 /* SightingsVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1375,6 +1404,7 @@
 				047A229D1557B373006D24CF /* RootViewController.m in Sources */,
 				047A229E1557B373006D24CF /* SwitcherCellVC.m in Sources */,
 				047A22C11557E17E006D24CF /* BirdAnnotation.m in Sources */,
+				047807EB155C0520000CD8B7 /* SightingsVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

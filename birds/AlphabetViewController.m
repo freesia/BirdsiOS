@@ -26,15 +26,7 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        myArray=[[NSMutableArray alloc] init];
-        arrayNames=[[NSMutableArray alloc]init];
-        birdsAppDelegate *appDelegate = (birdsAppDelegate *)[[UIApplication sharedApplication] delegate];
-        for (int i=0; i<appDelegate.animals.count; i++) {
-            Bird *animal = (Bird *)[appDelegate.animals objectAtIndex:i];
-            [myArray addObject:animal];
-            [arrayNames addObject:animal.name];
-        }
-        
+        [self readBirds];
     }
     return self;
 }
@@ -45,8 +37,22 @@
     [super didReceiveMemoryWarning];
 
 }
+-(void)readBirds{
 
-
+    myArray=[[NSMutableArray alloc] init];
+    arrayNames=[[NSMutableArray alloc]init];
+    birdsAppDelegate *appDelegate = (birdsAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate readAnimalsFromDatabase];
+    for (int i=0; i<appDelegate.animals.count; i++) {
+        Bird *animal = (Bird *)[appDelegate.animals objectAtIndex:i];
+        [myArray addObject:animal];
+        [arrayNames addObject:animal.name];
+    }
+    copyListOfItems = [[NSMutableArray alloc] init];
+    NSArray *objects = myArray;
+    self.tableData = [self partitionObjects:objects collationStringSelector:@selector(name)];
+    [self.table reloadData];
+}
 
 -(void)viewDidLoad {
     [super viewDidLoad];
@@ -64,9 +70,7 @@
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchIconButtonClicked)]; 
     anotherButton.tintColor=[UIColor brownColor];
     self.navigationItem.rightBarButtonItem = anotherButton;
-    copyListOfItems = [[NSMutableArray alloc] init];
-    NSArray *objects = myArray;
-    self.tableData = [self partitionObjects:objects collationStringSelector:@selector(name)];
+    
     searching = NO;
     letUserSelectRow = YES;
     
@@ -74,7 +78,11 @@
     
   
 }
-
+- (void) viewDidAppear:(BOOL)animated {
+    [self readBirds];
+  
+    [self.table reloadData];
+}
 
 - (void) viewWillAppear:(BOOL)animated {
     [self hideSearchBar];
@@ -87,7 +95,7 @@
     UIBarButtonItem *anotherButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSearch target:self action:@selector(searchIconButtonClicked)]; 
     anotherButton.tintColor=[UIColor brownColor];
     self.navigationItem.rightBarButtonItem = anotherButton;
-    [self.table reloadData];
+
     
 }
 
@@ -171,6 +179,7 @@
    
     cell.birdtitle.text=object.name;
     cell.birdDiscr.text=object.speciesName;
+    cell.sightLabel.text= [NSString stringWithFormat:@"%d", object.sight];
     NSString *imageName = [object.image stringByReplacingOccurrencesOfString:@".jpg" withString:@"_tn.jpg"];
     cell.birdImage.image=[UIImage imageNamed:imageName];
     }
@@ -196,6 +205,7 @@
                 detailVC.text=bird.text;
                 detailVC.shortSound=bird.shortSound;
                 detailVC.long_sound=bird.long_sound;
+                detailVC.sight=bird.sight;
                 
                 [self.navigationController pushViewController:detailVC animated:YES];
             }
@@ -213,6 +223,7 @@
     detailVC.text=animal.text;
     detailVC.shortSound=animal.shortSound;
     detailVC.long_sound=animal.long_sound;
+    detailVC.Id=animal.iD;
     
     [self.navigationController pushViewController:detailVC animated:YES];
     }

@@ -12,8 +12,10 @@
     UILabel *birdtitle;
     UILabel *birdDiscr;
     UIImageView *birdImage;
+    UILabel *sightLabel;
 
 }
+@property (nonatomic) IBOutlet UILabel *sightLabel;
 @property (nonatomic) IBOutlet  UILabel *birdtitle;
 @property (nonatomic) IBOutlet UILabel *birdDiscr;
 @property (nonatomic) IBOutlet UIImageView *birdImage;

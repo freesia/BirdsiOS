@@ -10,16 +10,16 @@
 #import "MusicVC.h"
 #import "DesciptionVC.h"
 #import "birdsAppDelegate.h"
-
+#import "SightingsVC.h"
 
 
 static NSString* kAppId =  @"309823785757178";
 
 @implementation DetailTabController
 
-@synthesize name, speciesName,id,image,text,shortSound,long_sound;
+@synthesize name, speciesName,Id,image,text,shortSound,long_sound;
 @synthesize delegate;
-
+@synthesize sight;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -54,9 +54,9 @@ static NSString* kAppId =  @"309823785757178";
     NSArray *tabBarItems = tabBar.viewControllers;
     DesciptionVC *descrVC= (DesciptionVC*) [tabBarItems objectAtIndex:1];
     MusicVC *musicVC= (MusicVC*) [tabBarItems objectAtIndex:0];
+    SightingsVC *sightVC=(SightingsVC *) [tabBarItems objectAtIndex:2];
     
-    
-    
+    sightVC.detailVC=self;
     musicVC.detailVC=self;
     descrVC.detailVC=self;
     
@@ -94,7 +94,7 @@ static NSString* kAppId =  @"309823785757178";
                                    
                                    name, @"name",
                                    speciesName, @"caption",
-                                   @"I see this bird at Houston Arboretum", @"description",
+                                   @"I have seen this bird at Houston Arboretum", @"description",
                                    nil];
     
     [appDelegate.facebook dialog:@"feed" andParams:params andDelegate:self];

@@ -23,7 +23,8 @@
    
 }
 
-
+@property (nonatomic) NSString *databaseName;
+@property (nonatomic) NSString *databasePath;
 @property (nonatomic) IBOutlet UIWindow *window;
 
 @property (nonatomic) IBOutlet UINavigationController *navigationController;
@@ -36,4 +37,5 @@
 -(void) readAnimalsFromDatabase;
 -(void) checkAndCreateDatabase;
 -(void) readBirdsLocationsFromDatabase;
+
 @end

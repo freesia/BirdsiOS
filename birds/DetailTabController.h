@@ -17,12 +17,12 @@
     
     NSString *name;
     NSString *speciesName;
-    NSString *id;
+    int iD;
     NSString *shortSound;
     NSString *long_sound;
     NSString *image;
     NSString *text;
-    
+    int sight;
     AlphabetViewController *delegate;
     
     NSArray* _permissions;
@@ -30,10 +30,10 @@
 
 
 @property (nonatomic)  AlphabetViewController *delegate;
-
+@property (nonatomic) int sight;
 @property (nonatomic) NSString *name;
 @property (nonatomic) NSString *speciesName;
-@property (nonatomic) NSString *id;
+@property (nonatomic) int Id;
 @property (nonatomic) NSString *shortSound;
 @property (nonatomic) NSString *long_sound;
 @property (nonatomic) NSString *image;

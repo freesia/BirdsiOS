@@ -135,7 +135,6 @@
 								<string key="NSFrame">{{286, 10}, {28, 26}}</string>
 								<reference key="NSSuperview" ref="1058124049"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -150,7 +149,7 @@
 								<string key="NSFrame">{{245, 3}, {40, 37}}</string>
 								<reference key="NSSuperview" ref="1058124049"/>
 								<reference key="NSWindow"/>
-								<reference key="NSNextKeyView" ref="508186141"/>
+								<reference key="NSNextKeyView" ref="450111089"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -165,13 +164,14 @@
 								<string key="NSFrame">{{263, 5}, {17, 21}}</string>
 								<reference key="NSSuperview" ref="1058124049"/>
 								<reference key="NSWindow"/>
+								<reference key="NSNextKeyView" ref="508186141"/>
 								<string key="NSReuseIdentifierKey">_NS:9</string>
 								<bool key="IBUIOpaque">NO</bool>
 								<bool key="IBUIClipsSubviews">YES</bool>
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">0</string>
+								<string key="IBUIText"/>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MSAxIDEAA</bytes>
@@ -247,6 +247,14 @@
 						<reference key="destination" ref="210693222"/>
 					</object>
 					<int key="connectionID">13</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBCocoaTouchOutletConnection" key="connection">
+						<string key="label">sightLabel</string>
+						<reference key="source" ref="562088570"/>
+						<reference key="destination" ref="450111089"/>
+					</object>
+					<int key="connectionID">19</int>
 				</object>
 			</array>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -338,7 +346,7 @@
 			<nil key="activeLocalization"/>
 			<dictionary class="NSMutableDictionary" key="localizations"/>
 			<nil key="sourceID"/>
-			<int key="maxID">18</int>
+			<int key="maxID">19</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<array class="NSMutableArray" key="referencedPartialClassDescriptions">
@@ -349,6 +357,7 @@
 						<string key="birdDiscr">UILabel</string>
 						<string key="birdImage">UIImageView</string>
 						<string key="birdtitle">UILabel</string>
+						<string key="sightLabel">UILabel</string>
 					</dictionary>
 					<dictionary class="NSMutableDictionary" key="toOneOutletInfosByName">
 						<object class="IBToOneOutletInfo" key="birdDiscr">
@@ -361,6 +370,10 @@
 						</object>
 						<object class="IBToOneOutletInfo" key="birdtitle">
 							<string key="name">birdtitle</string>
+							<string key="candidateClassName">UILabel</string>
+						</object>
+						<object class="IBToOneOutletInfo" key="sightLabel">
+							<string key="name">sightLabel</string>
 							<string key="candidateClassName">UILabel</string>
 						</object>
 					</dictionary>

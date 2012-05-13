@@ -20,6 +20,8 @@
 @synthesize animals;
 @synthesize facebook;
 @synthesize birdLocations;
+@synthesize databaseName;
+@synthesize databasePath;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {   
@@ -190,34 +192,37 @@
 			// Loop through the results and add them to the feeds array
 			while(sqlite3_step(compiledStatement) == SQLITE_ROW) {
 				// Read the data from the result row
-                int aId= sqlite3_column_int(compiledStatement, 0);
-				NSString *aName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 1)];
-				NSString *aSpecies = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)];
+                
+                int aSight=sqlite3_column_int(compiledStatement, 0);
+           
+                int aId= sqlite3_column_int(compiledStatement, 1);
+				NSString *aName = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 2)];
+				NSString *aSpecies = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)];
                 NSString *aShortSound;
                 NSString *aLongSound; 
-                if (sqlite3_column_text(compiledStatement, 3) != nil) {
-                    aShortSound = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 3)];
+                if (sqlite3_column_text(compiledStatement, 4) != nil) {
+                    aShortSound = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
                 } else {
                     aShortSound=@"";
                 }
-				if (sqlite3_column_text(compiledStatement, 4) != nil) {
-                    aLongSound = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 4)];
+				if (sqlite3_column_text(compiledStatement, 5) != nil) {
+                    aLongSound = [NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)];
                 } else {
                     aLongSound=@"";
                 }
                 
-                NSString *aImage=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 5)];
-                NSString *aText=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];
+                NSString *aImage=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 6)];
+                NSString *aText=[NSString stringWithUTF8String:(char *)sqlite3_column_text(compiledStatement, 7)];
 				
 				// Create a new animal object with the data from the database
-				Bird *bird = [[Bird alloc] initWithName:aName speciesName:aSpecies image:aImage text:aText shortSound:aShortSound longSound:aLongSound id:aId];
+				Bird *bird = [[Bird alloc] initWithName:aName speciesName:aSpecies image:aImage text:aText shortSound:aShortSound longSound:aLongSound id:aId sight:aSight];
 				
 				// Add the animal object to the animals Array
 				[animals addObject:bird];
 				
 			}
 		}
-	//sqlite3_finalize(compiledStatement);
+        sqlite3_finalize(compiledStatement);
 		
 	}
 	
@@ -261,7 +266,8 @@
 		sqlite3_finalize(compiledStatement2);
 		
 	}
-	sqlite3_close(database);
+	//sqlite3_close(database);
 	
 }
+
 @end

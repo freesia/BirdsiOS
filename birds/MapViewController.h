@@ -9,10 +9,13 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "DetailTabController.h"
+
 
 @interface MapViewController : UIViewController <MKMapViewDelegate,CLLocationManagerDelegate> {
     MKMapView *map;
     NSMutableArray *annotationsArray;
+    DetailTabController *detailVC;
     
     NSMutableArray *myArray;
     CLLocationManager *locationManager;

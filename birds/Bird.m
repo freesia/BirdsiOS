@@ -9,11 +9,11 @@
 #import "Bird.h"
 
 @implementation Bird
-@synthesize name, speciesName,iD,image,text,shortSound,long_sound;
+@synthesize name, speciesName,iD,image,text,shortSound,long_sound,sight;
 
 
 
--(id)initWithName:(NSString *)n speciesName:(NSString *)d image:(NSString *)im text:(NSString*)txt shortSound:(NSString*)sound1 longSound:(NSString*)sound2 id:(int)i{
+-(id)initWithName:(NSString *)n speciesName:(NSString *)d image:(NSString *)im text:(NSString*)txt shortSound:(NSString*)sound1 longSound:(NSString*)sound2 id:(int)i sight:(int)s{
 	self.name = n;
 	self.speciesName = d;
 	self.image = im;
@@ -21,6 +21,7 @@
     self.shortSound=sound1;
     self.long_sound=sound2;
     self.iD=i;
+    self.sight=s;
 	return self;
 }
 @end

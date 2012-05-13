@@ -10,6 +10,7 @@
 #import "birdsAppDelegate.h"
 #import "BirdAnnotation.h"
 #import "Bird.h"
+#import "DetailTabController.h"
 
 
 @interface MapViewController ()
@@ -48,11 +49,7 @@
 //   [locationManager stopUpdatingLocation];
 
     [self gotoLocation];
-    birdsAppDelegate *appDelegate = (birdsAppDelegate *)[[UIApplication sharedApplication] delegate];
-    
-    annotationsArray=appDelegate.birdLocations;
-    NSLog(@"%d", annotationsArray.count);
-    [self.mapView addAnnotations:self.annotationsArray];
+
     
 }
 
@@ -61,6 +58,14 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+}
+-(void) viewDidAppear:(BOOL)animated {
+   
+    birdsAppDelegate *appDelegate = (birdsAppDelegate *)[[UIApplication sharedApplication] delegate];
+    [appDelegate readBirdsLocationsFromDatabase];
+    annotationsArray=appDelegate.birdLocations;
+    NSLog(@"%d", annotationsArray.count);
+    [self.mapView addAnnotations:self.annotationsArray];
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -160,9 +165,20 @@
     
     birdsAppDelegate *appDelegate = (birdsAppDelegate *)[[UIApplication sharedApplication] delegate];
     for (int i=0; i<appDelegate.animals.count; i++) {
-        Bird *animal = (Bird *)[appDelegate.animals objectAtIndex:i];
-        if (piu.iD==animal.iD) {
+        Bird *bird = (Bird *)[appDelegate.animals objectAtIndex:i];
+        if (piu.iD==bird.iD) {
             NSLog(@"OLOLOLOLO");
+            detailVC=[[DetailTabController alloc] initWithNibName:@"DetailTabController" bundle:nil];
+            
+            detailVC.image=bird.image;
+            detailVC.name=bird.name;
+            detailVC.speciesName=bird.speciesName;
+            detailVC.text=bird.text;
+            detailVC.shortSound=bird.shortSound;
+            detailVC.long_sound=bird.long_sound;
+            
+            [self.navigationController pushViewController:detailVC animated:YES];
+            
         }
         
         
